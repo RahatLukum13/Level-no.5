@@ -1,33 +1,33 @@
 @font-face {
     font-family: 'TTNorms-Regular';
     src: local('TTNorms-Regular'),
-    url("C:/Users/karma/OneDrive/Desktop/Для Димы/Шрифты/tt-norms-the-one-universal-grotesk/TTNorms-Regular.otf") format('opentype');
+    url("https://github.com/RahatLukum13/Level-no.5/blob/c5d0c65061077ff6d1cdb713eca3c29733353e6b/%D0%A8%D1%80%D0%B8%D1%84%D1%82%D1%8B/tt-norms-the-one-universal-grotesk/TTNorms-Regular.otf") format('opentype');
 }
 
 @font-face {
     font-family: 'TTNorms-Bold';
     src: local('TTNorms-Bold'),
-    url("C:/Users/karma/OneDrive/Desktop/Для Димы/Шрифты/tt-norms-the-one-universal-grotesk/TTNorms-Bold.otf") format('opentype');
+    url("https://github.com/RahatLukum13/Level-no.5/blob/c5d0c65061077ff6d1cdb713eca3c29733353e6b/%D0%A8%D1%80%D0%B8%D1%84%D1%82%D1%8B/tt-norms-the-one-universal-grotesk/TTNorms-Bold.otf") format('opentype');
 }
 
 @font-face {
     font-family: 'TTNorms-Thin';
     src: local('TTNorms-Thin'),
-    url("C:/Users/karma/OneDrive/Desktop/Для Димы/Шрифты/tt-norms-the-one-universal-grotesk/TTNorms-Thin.otf") format('opentype');
+    url("https://github.com/RahatLukum13/Level-no.5/blob/c5d0c65061077ff6d1cdb713eca3c29733353e6b/%D0%A8%D1%80%D0%B8%D1%84%D1%82%D1%8B/tt-norms-the-one-universal-grotesk/TTNorms-Thin.otf") format('opentype');
 }
 
 @font-face {
     font-family: 'TTNorms-ThinItalic';
     src: local('TTNorms-ThinItalic'),
-    url("C:/Users/karma/OneDrive/Desktop/Для Димы/Шрифты/tt-norms-the-one-universal-grotesk/TTNorms-ThinItalic.otf") format('opentype');
+    url("https://github.com/RahatLukum13/Level-no.5/blob/c5d0c65061077ff6d1cdb713eca3c29733353e6b/%D0%A8%D1%80%D0%B8%D1%84%D1%82%D1%8B/tt-norms-the-one-universal-grotesk/TTNorms-ThinItalic.otf") format('opentype');
 }
 
 
 @font-face {
     font-family: 'Wremena Regular';
     src: local('Wremena Regular'),
-    url("C:/Users/karma/OneDrive/Desktop/Для Димы/Шрифты/wremena/Wremena Regular.otf") format('opentype'),
-    url("C:/Users/karma/OneDrive/Desktop/Для Димы/Шрифты/wremena/Wremena Regular.woff") format('woff');
+    url("https://github.com/RahatLukum13/Level-no.5/blob/c5d0c65061077ff6d1cdb713eca3c29733353e6b/%D0%A8%D1%80%D0%B8%D1%84%D1%82%D1%8B/wremena/Wremena%20Regular.otf") format('opentype'),
+    url("https://github.com/RahatLukum13/Level-no.5/blob/c5d0c65061077ff6d1cdb713eca3c29733353e6b/%D0%A8%D1%80%D0%B8%D1%84%D1%82%D1%8B/wremena/Wremena%20Regular.woff") format('woff');
 }
 
 

@@ -15,22 +15,22 @@ function toggleMenuIcon() {
     foot.classList.toggle('active');
     const foot_active = document.querySelector('.footer_ul.active');
     foot.style.height = '0px';
-    foot_active.style.height = `${main.clientWidth * 0.15 + 6 * (WWidth2 / 95) / (window.devicePixelRatio * 2 / 3) ** 0.6}px`;
+    foot_active.style.height = `${main.clientWidth * 0.15 + 6 * (WWidth2 / 95) / (window.devicePixelRatio * 2 / 3)}px`;
 }
 sofa.style.bottom = `-${Math.max(0, (WWidth / 3840 * 1914 - WHeight) / (window.devicePixelRatio * 2 / 3))}px`;
 sofa.style.width = `${WWidth / (window.devicePixelRatio * 2 / 3)}px`;
-H.style.fontSize = `${((WWidth / 33) - (WWidth - window.innerWidth * (window.devicePixelRatio * 2 / 3)) * 0.01) / (window.devicePixelRatio * 2 / 3) ** 0.9}px`;
-pre.style.fontSize = `${((WWidth / 120) - (WWidth - window.innerWidth * (window.devicePixelRatio * 2 / 3)) * 0.005) / (window.devicePixelRatio * 2 / 3) ** 0.85}px`;
+H.style.fontSize = `${((WWidth / 33) - (WWidth - window.innerWidth * (window.devicePixelRatio * 2 / 3)) * 0.01) / (window.devicePixelRatio * 2 / 3)}px`;
+pre.style.fontSize = `${((WWidth / 120) - (WWidth - window.innerWidth * (window.devicePixelRatio * 2 / 3)) * 0.005) / (window.devicePixelRatio * 2 / 3)}px`;
 main.style.height = `${Math.max(WHeight / (window.devicePixelRatio * 2 / 3), ul.scrollHeight + sofa.scrollHeight * 0.5)}px`;
 menuIcon.addEventListener('click', toggleMenuIcon);
 window.addEventListener('resize', () => {
     sofa.style.bottom = `-${Math.max(0, (WWidth / 3840 * 1482 - WHeight) / (window.devicePixelRatio * 2 / 3))}px`;
     sofa.style.width = `${WWidth / (window.devicePixelRatio * 2 / 3)}px`;
-    H.style.fontSize = `${((WWidth / 33) - (WWidth - window.innerWidth * (window.devicePixelRatio * 2 / 3)) * 0.01) / (window.devicePixelRatio * 2 / 3) ** 0.9}px`;
-    pre.style.fontSize = `${((WWidth / 120) - (WWidth - window.innerWidth * (window.devicePixelRatio * 2 / 3)) * 0.005) / (window.devicePixelRatio * 2 / 3) ** 0.85}px`;
+    H.style.fontSize = `${((WWidth / 33) - (WWidth - window.innerWidth * (window.devicePixelRatio * 2 / 3)) * 0.01) / (window.devicePixelRatio * 2 / 3)}px`;
+    pre.style.fontSize = `${((WWidth / 120) - (WWidth - window.innerWidth * (window.devicePixelRatio * 2 / 3)) * 0.005) / (window.devicePixelRatio * 2 / 3)}px`;
     main.style.height = `${Math.max(WHeight / (window.devicePixelRatio * 2 / 3), ul.scrollHeight + sofa.scrollHeight * 0.5)}px`;
     const foot_active = document.querySelector('.footer_ul.active');
-    foot_active.style.height = `${main.clientWidth * 0.15 + 6 * (WWidth2 / 95) / (window.devicePixelRatio * 2 / 3) ** 0.6}px`;
+    foot_active.style.height = `${main.clientWidth * 0.15 + 6 * (WWidth2 / 95) / (window.devicePixelRatio * 2 / 3)}px`;
     if(window.innerWidth > 800){
         menuIcon.classList.toggle('active');
         foot_active.style.height = 'auto';

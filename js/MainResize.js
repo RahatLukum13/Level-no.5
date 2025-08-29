@@ -32,13 +32,13 @@ background.style.height = `${WHeight}px`;
 back_sofa.style.width = `${WWidth / (window.devicePixelRatio * 2 / 3)}px`;
 back_sofa.style.bottom = `-${(WWidth / 3840 * 1482 - WHeight / 1914 * 1482) / (window.devicePixelRatio * 2 / 3)}px`
 secondUl.style.marginTop = `${WHeight / (window.devicePixelRatio * 2 / 3) * 0.1 + pageYOffset * 0.09}px`;
-sec_slide_pre.style.fontSize = `${((WWidth / 47.5) - (WWidth - window.innerWidth * (window.devicePixelRatio * 2 / 3)) * 0.02) / (window.devicePixelRatio * 2 / 3) ** 0.8}px`;
-thi_slide_pre.style.fontSize = `${((WWidth / 110) - (WWidth - window.innerWidth * (window.devicePixelRatio * 2 / 3)) * 0.005) / (window.devicePixelRatio * 2 / 3) ** 0.4}px`;
+sec_slide_pre.style.fontSize = `${((WWidth / 47.5) - (WWidth - window.innerWidth * (window.devicePixelRatio * 2 / 3)) * 0.02) / (window.devicePixelRatio * 2 / 3)}px`;
+thi_slide_pre.style.fontSize = `${((WWidth / 110) - (WWidth - window.innerWidth * (window.devicePixelRatio * 2 / 3)) * 0.005) / (window.devicePixelRatio * 2 / 3)}px`;
 for(const prost of class_prostr){
-    prost.style.fontSize = `${((WWidth / 33) - (WWidth - window.innerWidth * (window.devicePixelRatio * 2 / 3)) * 0.01) / (window.devicePixelRatio * 2 / 3) ** 0.9}px`;
+    prost.style.fontSize = `${((WWidth / 33) - (WWidth - window.innerWidth * (window.devicePixelRatio * 2 / 3)) * 0.01) / (window.devicePixelRatio * 2 / 3)}px`;
 }
 for(const prostr of prostrs){
-    prostr.style.fontSize = `${((WWidth / 120)) / (window.devicePixelRatio * 2 / 3) ** 0.7}px`;
+    prostr.style.fontSize = `${((WWidth / 120)) / (window.devicePixelRatio * 2 / 3)}px`;
 }
 thirdUl.style.marginTop = `${WHeight * 0.14 / (window.devicePixelRatio * 2 / 3)}px`;
 thirdUl.style.marginBottom = `${WHeight * 0.06 / (window.devicePixelRatio * 2 / 3)}px`;
@@ -61,14 +61,14 @@ window.addEventListener('resize', () => {
     }
     back_sofa.style.width = `${WWidth / (window.devicePixelRatio * 2 / 3)}px`;
     back_sofa.style.bottom = `-${(WWidth / 3840 * 1482 - WHeight / 1914 * 1482) / (window.devicePixelRatio * 2 / 3)}px`
-    sec_slide_pre.style.fontSize = `${((WWidth / 47.5) - (WWidth - window.innerWidth * (window.devicePixelRatio * 2 / 3)) * 0.02) / (window.devicePixelRatio * 2 / 3) ** 0.8}px`;
-    secondUl.style.marginLeft = `${((WWidth * 0.1) - (WWidth - window.innerWidth * (window.devicePixelRatio * 2 / 3)) * 0.1) / (window.devicePixelRatio * 2 / 3) ** 1.2}px`;
-    thi_slide_pre.style.fontSize = `${((WWidth / 110) - (WWidth - window.innerWidth * (window.devicePixelRatio * 2 / 3)) * 0.005) / (window.devicePixelRatio * 2 / 3) ** 0.4}px`;
+    sec_slide_pre.style.fontSize = `${((WWidth / 47.5) - (WWidth - window.innerWidth * (window.devicePixelRatio * 2 / 3)) * 0.02) / (window.devicePixelRatio * 2 / 3)}px`;
+    secondUl.style.marginLeft = `${((WWidth * 0.1) - (WWidth - window.innerWidth * (window.devicePixelRatio * 2 / 3)) * 0.1) / (window.devicePixelRatio * 2 / 3)}px`;
+    thi_slide_pre.style.fontSize = `${((WWidth / 110) - (WWidth - window.innerWidth * (window.devicePixelRatio * 2 / 3)) * 0.005) / (window.devicePixelRatio * 2 / 3)}px`;
     for(const prost of class_prostr){
-        prost.style.fontSize = `${((WWidth / 33) - (WWidth - window.innerWidth * (window.devicePixelRatio * 2 / 3)) * 0.01) / (window.devicePixelRatio * 2 / 3) ** 0.9}px`;
+        prost.style.fontSize = `${((WWidth / 33) - (WWidth - window.innerWidth * (window.devicePixelRatio * 2 / 3)) * 0.01) / (window.devicePixelRatio * 2 / 3)}px`;
     }
     for(const prostr of prostrs){
-        prostr.style.fontSize = `${((WWidth / 120)) / (window.devicePixelRatio * 2 / 3) ** 0.7}px`;
+        prostr.style.fontSize = `${((WWidth / 120)) / (window.devicePixelRatio * 2 / 3)}px`;
     }
     thirdUl.style.marginTop = `${WHeight * 0.14 / (window.devicePixelRatio * 2 / 3)}px`;
     thirdUl.style.marginBottom = `${WHeight * 0.06 / (window.devicePixelRatio * 2 / 3)}px`;
