@@ -25,7 +25,6 @@ window.addEventListener('resize', () => {
     const foot_active = document.querySelector('.footer_ul.active');
     if(window.innerWidth > 1300){
         menuIcon.classList.toggle('active');
-        foot_active.style.height = 'auto';
         foot_active.classList.toggle('active');
     }
 });
