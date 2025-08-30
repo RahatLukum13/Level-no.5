@@ -33,7 +33,7 @@
 
 @media screen and (max-width: 500px) {
 }
-@media screen and (500px <= width < 800px) {
+@media screen and (max-width: 800px) {
     .ab_us_ul{flex-direction: column;}
     #Dima{margin: 0;}
     .ab_ul_img{width: auto;}
@@ -61,7 +61,7 @@
     #thi_slide_pre{margin-left: 1em;}
     #for_slide{margin: 10% 5%;margin-top: 20%;}
 }
-@media screen and (800px <= width < 1300px) {
+@media screen and (min-width: 800px) {
     .ab_us_ul{flex-direction: row;}
     .ab_ul_img li img{width: 16dvw;}
     #ab_us_h{font-size: 4dvw;}
