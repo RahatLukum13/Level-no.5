@@ -520,13 +520,13 @@ justify-self: center;
 
 
 .menu-icon.active:hover span:nth-child(1){
-    height: calc(3.5dvw / 9 * 7 * sqrt(2));
-    transform: translate(calc(3.5dvw / 3), 0%) rotate(-45deg);
+    height: calc(45px / 9 * 7 * sqrt(2));
+    transform: translate(calc(45px / 3), 0%) rotate(-45deg);
 }
 
 .menu-icon.active:hover span:nth-child(3){
-    height: calc(3.5dvw / 9 * 7 * sqrt(2));
-    transform: translate(calc(-3.5dvw / 3), 0%) rotate(45deg);
+    height: calc(45px / 9 * 7 * sqrt(2));
+    transform: translate(calc(-45px / 3), 0%) rotate(45deg);
 }
 
 
