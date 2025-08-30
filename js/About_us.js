@@ -22,9 +22,8 @@ window.addEventListener('resize', () => {
     sofa.style.bottom = `-${Math.max(0, (WWidth / 3840 * 1482 - WHeight) / (window.devicePixelRatio * 2 / 3))}px`;
     sofa.style.width = `${WWidth / (window.devicePixelRatio * 2 / 3)}px`;
     main.style.height = `${Math.max(WHeight / (window.devicePixelRatio * 2 / 3), ul.scrollHeight + sofa.scrollHeight * 0.5)}px`;
-    const foot_active = document.querySelector('.footer_ul.active');
-    if(window.innerWidth > 1300){
+    if(window.innerWidth > 1300 & menuIcon.hasClass("active")){
         menuIcon.classList.toggle('active');
-        foot_active.classList.toggle('active');
+        foot.classList.toggle('active');
     }
 });
