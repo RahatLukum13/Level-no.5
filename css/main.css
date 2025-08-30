@@ -62,6 +62,7 @@
     #for_slide{margin: 10% 5%;margin-top: 20%;}
 }
 @media screen and (min-width: 800px) {
+    #for_slide{margin: 10% 15%;}
     .ab_us_ul{flex-direction: row;}
     .ab_ul_img li img{width: 16dvw;}
     #ab_us_h{font-size: 4dvw;}
@@ -86,7 +87,6 @@
     #thi_slide_pre{margin: 1.5em 0;}
 }
 @media screen and (max-width: 1300px) {
-    #for_slide{margin: 10% 15%;}
     #footer_ul{flex-direction: column;}
     footer ul{justify-content: center;}
     .container{display: flex;}
