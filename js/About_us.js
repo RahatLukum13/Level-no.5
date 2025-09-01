@@ -1,6 +1,6 @@
 var ratio = window.screen.availWidth / window.screen.availHeight;
-const WHeight = Math.max(window.screen.availHeight - (window.outerHeight - window.innerHeight * (window.devicePixelRatio * 2 / 3)), (window.screen.availWidth - (window.outerWidth - window.innerWidth * (window.devicePixelRatio * 2 / 3))) / ratio);
-const WWidth = Math.max(window.screen.availWidth - (window.outerWidth - window.innerWidth * (window.devicePixelRatio * 2 / 3)), (window.screen.availHeight - (window.outerHeight - window.innerHeight * (window.devicePixelRatio * 2 / 3))) / ratio);
+const WHeight = window.screen.availHeight - (window.outerHeight - window.innerHeight * (window.devicePixelRatio * 2 / 3));
+const WWidth = window.screen.availWidth - (window.outerWidth - window.innerWidth * (window.devicePixelRatio * 2 / 3));
 ratio = WWidth / WHeight;
 const main = document.getElementById("ab_us_main");
 const sofa = document.getElementById("ab_us_sofa");
@@ -14,16 +14,18 @@ function toggleMenuIcon() {
     menuIcon.classList.toggle('active');
     foot.classList.toggle('active');
 }
-sofa.style.bottom = `-${Math.max(0, (WWidth / 3840 * 1914 - WHeight) / (window.devicePixelRatio * 2 / 3))}px`;
+sofa.style.bottom = `0px`;
 sofa.style.width = `${WWidth / (window.devicePixelRatio * 2 / 3)}px`;
 main.style.height = `${Math.max(WHeight / (window.devicePixelRatio * 2 / 3), ul.scrollHeight + sofa.scrollHeight * 0.5)}px`;
 menuIcon.addEventListener('click', toggleMenuIcon);
 window.addEventListener('resize', () => {
-    sofa.style.bottom = `-${Math.max(0, (WWidth / 3840 * 1482 - WHeight) / (window.devicePixelRatio * 2 / 3))}px`;
+    sofa.style.bottom = `0px`;
     sofa.style.width = `${WWidth / (window.devicePixelRatio * 2 / 3)}px`;
     main.style.height = `${Math.max(WHeight / (window.devicePixelRatio * 2 / 3), ul.scrollHeight + sofa.scrollHeight * 0.5)}px`;
-    if(window.innerWidth > 1300 & menuIcon.hasClass("active")){
+    const foot_active = document.querySelector('.footer_ul.active');
+    if(window.innerWidth > 1300){
         menuIcon.classList.toggle('active');
-        foot.classList.toggle('active');
+        foot_active.style.height = 'auto';
+        foot_active.classList.toggle('active');
     }
 });

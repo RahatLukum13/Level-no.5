@@ -1,8 +1,9 @@
 var ratio = window.screen.availWidth / window.screen.availHeight;
-const WHeight = Math.max(window.screen.availHeight - (window.outerHeight - window.innerHeight * (window.devicePixelRatio * 2 / 3)), (window.screen.availWidth - (window.outerWidth - window.innerWidth * (window.devicePixelRatio * 2 / 3))) / ratio);
-const WWidth = Math.max(window.screen.availWidth - (window.outerWidth - window.innerWidth * (window.devicePixelRatio * 2 / 3)), (window.screen.availHeight - (window.outerHeight - window.innerHeight * (window.devicePixelRatio * 2 / 3))) / ratio);
+var WHeight = window.screen.availHeight - (window.outerHeight - window.innerHeight * (window.devicePixelRatio * 2 / 3));
+var WWidth = window.screen.availWidth - (window.outerWidth - window.innerWidth * (window.devicePixelRatio * 2 / 3));
 ratio = WWidth / WHeight;
-const slides = document.getElementsByClassName("slide");
+const slide1 = document.getElementById("slide");
+const slide2 = document.getElementById("slide12");
 const video = document.getElementById("video1");
 const background1 = document.getElementsByClassName("background")[0];
 const background2 = document.getElementById("background_2");
@@ -14,21 +15,21 @@ const thirdUl = document.getElementById("Slide3");
 const for_slide  = document.getElementById("for_slide");
 const class_prostr = document.getElementsByClassName("Wrem_Regular");
 const prostrs = document.getElementsByClassName("TTN_ThinItalic");
-for(const slide of slides){
-    slide.style.height = `${WHeight / (window.devicePixelRatio * 2 / 3)}px`;
-}
+slide1.style.height = `${WHeight / (window.devicePixelRatio * 2 / 3)}px`;
+slide2.style.height = `${Math.max(WHeight / (window.devicePixelRatio * 2 / 3), WWidth / (window.devicePixelRatio * 2 / 3) / 3840 * 1914)}px`;
 background1.style.height = `${Math.max(WHeight, WWidth)}px`;
-background2.style.height = `${WHeight}px`;
+background2.style.height = `${Math.max(WHeight / (window.devicePixelRatio * 2 / 3), WWidth / (window.devicePixelRatio * 2 / 3) / 3840 * 1914)}px`;
 back_sofa.style.width = `${WWidth / (window.devicePixelRatio * 2 / 3)}px`;
-back_sofa.style.bottom = `-${(WWidth / 3840 * 1482 - WHeight / 1914 * 1482) / (window.devicePixelRatio * 2 / 3)}px`
-secondUl.style.marginTop = `${WHeight / (window.devicePixelRatio * 2 / 3) * 0.1 + pageYOffset * 0.09}px`;
+back_sofa.style.bottom = `0px`
+secondUl.style.marginTop = `${WHeight / (window.devicePixelRatio * 2 / 3) * 0.08 + pageYOffset * 0.09}px`;
 window.addEventListener('resize', () => {
-    for(const slide of slides){
-        slide.style.height = `${WHeight / (window.devicePixelRatio * 2 / 3)}px`;
-    }
+    WHeight = window.screen.availHeight - (window.outerHeight - window.innerHeight * (window.devicePixelRatio * 2 / 3));
+    WWidth = window.screen.availWidth - (window.outerWidth - window.innerWidth * (window.devicePixelRatio * 2 / 3));
+    slide1.style.height = `${WHeight / (window.devicePixelRatio * 2 / 3)}px`;
+    slide2.style.height = `${Math.max(WHeight / (window.devicePixelRatio * 2 / 3), WWidth / (window.devicePixelRatio * 2 / 3) / 3840 * 1914)}px`;
     back_sofa.style.width = `${WWidth / (window.devicePixelRatio * 2 / 3)}px`;
-    back_sofa.style.bottom = `-${(WWidth / 3840 * 1482 - WHeight / 1914 * 1482) / (window.devicePixelRatio * 2 / 3)}px`
+    back_sofa.style.bottom = `0px`
 });
 window.addEventListener('scroll', () => {
-    secondUl.style.marginTop = `${WHeight / (window.devicePixelRatio * 2 / 3) * 0.1 + pageYOffset * 0.09}px`;
+    secondUl.style.marginTop = `${WHeight / (window.devicePixelRatio * 2 / 3) * 0.08 + pageYOffset * 0.09}px`;
 });
