@@ -38,6 +38,8 @@
     .projects_vertical{width: 42.8dvw;}
     .projects img{height: calc(88dvw / 16 * 9);}
     .projects_name{padding: 6dvw;}
+    .mainContainer{grid-template-columns: repeat(1, 1fr); padding: 5dvw;}
+    .contain img{width: 43dvw; height: calc(43dvw / 16 * 9);}
 }
 @media screen and (min-width: 500px) {
     #for_slide{margin: 10% 15%;}
@@ -46,6 +48,8 @@
     .projects_vertical{width: 37.8dvw;}
     .projects img{height: calc(78dvw / 16 * 9);}
     .projects_name{padding: 11dvw;}
+    .mainContainer{grid-template-columns: repeat(2, 1fr); padding: 12dvw;}
+    .contain img{width: 36dvw; height: calc(36dvw / 16 * 9);}
 }
 @media screen and (max-width: 800px) {
     .ab_us_ul{flex-direction: column;}
@@ -101,12 +105,18 @@
 }
 
 @media screen and (max-width: 1100px) {
-    header{height: 40px;font-size: 11px;}
+    header{height: 40px; font-size: 11px;}
+    #button{height: 40px; padding-top: 90px;}
+    #button button{font-size: 11px;}
     .projects_name{padding-top: 90px;}
+    .mainContainer{padding-top: 180px;}
 }
 @media screen and (min-width: 1100px) {
     header{height: 60px;font-size: 17px;}
+    #button{height: 60px; padding-top: 110px;}
+    #button button{font-size: 17px;}
     .projects_name{padding-top: 110px;}
+    .mainContainer{padding-top: 200px;}
 }
 @media screen and (max-width: 1400px) {
     #footer_ul{flex-direction: column;}
@@ -620,13 +630,10 @@ justify-self: center;
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 60px;
-    padding-top: 110px;
     justify-content: center;
 }
 #button li{
     position: relative;
-    width: 192.63px;
     margin-right: 2px;
 }
 #button button{
@@ -635,7 +642,6 @@ justify-self: center;
     cursor: pointer;
     width: 100%;
     height: 100%;
-    font-size: 17px;
     border: none;
     background-image: url('https://rahatlukum13.github.io/Level-no.5/Png/0002.png');
     background-size: cover;
@@ -653,9 +659,6 @@ justify-self: center;
 
 .mainContainer{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 12dvw;
-    padding-top: 200px;
     padding-bottom: 0;
 }
 .contain{
@@ -663,8 +666,6 @@ justify-self: center;
 }
 .contain img{
     object-fit: cover;
-    width: 36dvw;
-    height: calc(36dvw / 16 * 9);
 }
 .contain p{
     line-height: 1.2em;
