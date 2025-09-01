@@ -32,6 +32,20 @@
 
 
 @media screen and (max-width: 500px) {
+    #for_slide{margin: 5% 10%;}
+    .projects{width: 90dvw; padding: 5dvw;}
+    .projects_horiz{width: 88dvw;}
+    .projects_vertical{width: 42.8dvw;}
+    .projects img{height: calc(88dvw / 16 * 9);}
+    .projects_name{padding: 6dvw;}
+}
+@media screen and (min-width: 500px) {
+    #for_slide{margin: 10% 15%;}
+    .projects{width: 80dvw; padding: 10dvw;}
+    .projects_horiz{width: 78dvw;}
+    .projects_vertical{width: 37.8dvw;}
+    .projects img{height: calc(78dvw / 16 * 9);}
+    .projects_name{padding: 11dvw;}
 }
 @media screen and (max-width: 800px) {
     .ab_us_ul{flex-direction: column;}
@@ -61,7 +75,7 @@
     #thi_slide_pre{margin-left: 1em;}
     #for_slide{margin: 10% 5%;margin-top: 20%;}
 }
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 800px) {
     .ab_us_ul{flex-direction: row;}
     .ab_ul_img li img{width: 16dvw;}
     #ab_us_h{font-size: 4dvw;}
@@ -85,12 +99,20 @@
     .p_thi_slide .TTN_ThinItalic{font-size: 1dvw;}
     #thi_slide_pre{margin: 1.5em 0;}
 }
+
+@media screen and (max-width: 1100px) {
+    header{height: 40px;font-size: 11px;}
+    .projects_name{padding-top: 90px;}
+}
+@media screen and (min-width: 1100px) {
+    header{height: 60px;font-size: 17px;}
+    .projects_name{padding-top: 110px;}
+}
 @media screen and (max-width: 1400px) {
-    #for_slide{margin: 10% 15%;}
     #footer_ul{flex-direction: column;}
     footer ul{justify-content: center;}
     .container{display: flex;}
-    .footer_ul{flex-direction: column;height: 0px;}
+    .footer_ul{flex-direction: column; height: 0px;}
     footer > ul{transition: all 1s;}
 }
 @media screen and (min-width: 1400px) {
@@ -164,8 +186,6 @@ ul{
 header {
     position: fixed;
     width: calc(100vw - 50px);
-    font-size: 17px;
-    height: 60px;
     margin: 25px;
     z-index: 1;
 }
@@ -655,25 +675,14 @@ justify-self: center;
 
 .projects{
     display: flexbox;
-    width: 80dvw;
-    padding: 10dvw;
     padding-top: 0;
 }
 .projects img{
     padding: 1dvw;
     object-fit: cover;
-    height: calc(78dvw / 16 * 9);
-}
-.projects_horiz{
-    width: 78dvw;
-}
-.projects_vertical{
-    width: 37.8dvw;
 }
 .projects_name{
-    padding: 11dvw;
     padding-bottom: 0.5em;
-    padding-top: 110px;
     font-size: 4dvw;
 }
 
