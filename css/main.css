@@ -108,6 +108,7 @@
     header{height: 40px; font-size: 11px;}
     #button{height: 40px; padding-top: 90px;}
     #button button{font-size: 11px;}
+    #button li{width: 128px;}
     .projects_name{padding-top: 90px;}
     .mainContainer{padding-top: 180px;}
 }
@@ -115,6 +116,7 @@
     header{height: 60px;font-size: 17px;}
     #button{height: 60px; padding-top: 110px;}
     #button button{font-size: 17px;}
+    #button li{width: 192px;}
     .projects_name{padding-top: 110px;}
     .mainContainer{padding-top: 200px;}
 }
