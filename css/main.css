@@ -38,8 +38,8 @@
     .projects_vertical{width: 42.8dvw;}
     .projects img{height: calc(88dvw / 16 * 9);}
     .projects_name{padding: 6dvw;}
-    .mainContainer{grid-template-columns: repeat(1, 1fr); padding: 5dvw;}
-    .contain img{width: 43dvw; height: calc(43dvw / 16 * 9);}
+    .mainContainer{grid-template-columns: 1fr; padding: 5dvw;}
+    .contain img{width: 88dvw; height: calc(88dvw / 16 * 9);}
 }
 @media screen and (min-width: 500px) {
     #for_slide{margin: 10% 15%;}
@@ -78,6 +78,7 @@
     .p_thi_slide .TTN_ThinItalic{font-size: 2.3dvw;}
     #thi_slide_pre{margin-left: 1em;}
     #for_slide{margin: 10% 5%;margin-top: 20%;}
+    #to_contact{font-size: 2.2dvw}
 }
 @media screen and (min-width: 800px) {
     .ab_us_ul{flex-direction: row;}
@@ -102,6 +103,7 @@
     .p_thi_slide .Wrem_Regular{font-size: 4dvw;}
     .p_thi_slide .TTN_ThinItalic{font-size: 1dvw;}
     #thi_slide_pre{margin: 1.5em 0;}
+    #to_contact{font-size: 1dvw}
 }
 
 @media screen and (max-width: 1100px) {
@@ -199,7 +201,7 @@ header {
     position: fixed;
     width: calc(100vw - 50px);
     margin: 25px;
-    z-index: 1;
+    z-index: 3;
 }
 nav {
     position: relative;
