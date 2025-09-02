@@ -16,13 +16,13 @@ function toggleMenuIcon() {
 }
 sofa.style.bottom = `0px`;
 sofa.style.width = `${WWidth / (window.devicePixelRatio * 2 / 3)}px`;
-main.style.height = `${Math.max(WHeight / (window.devicePixelRatio * 2 / 3), ul.scrollHeight + sofa.scrollHeight * 0.5)}px`;
+main.style.height = `${Math.max(WHeight / (window.devicePixelRatio * 2 / 3), ul.scrollHeight + sofa.scrollHeight * 0.35)}px`;
 menuIcon.addEventListener('click', toggleMenuIcon);
 window.addEventListener('resize', () => {
     sofa.style.bottom = `0px`;
     sofa.style.width = `${WWidth / (window.devicePixelRatio * 2 / 3)}px`;
-    main.style.height = `${Math.max(WHeight / (window.devicePixelRatio * 2 / 3), ul.scrollHeight + sofa.scrollHeight * 0.5)}px`;
-    if(window.innerWidth > 1400 & menuIcon.hasClass('active')){
+    main.style.height = `${Math.max(WHeight / (window.devicePixelRatio * 2 / 3), ul.scrollHeight + sofa.scrollHeight * 0.35)}px`;
+    if(window.innerWidth > 1400 & menuIcon.classList.contains('active')){
         menuIcon.classList.toggle('active');
         foot.style.height = 'auto';
         foot.classList.toggle('active');
