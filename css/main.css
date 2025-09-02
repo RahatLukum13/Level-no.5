@@ -695,12 +695,15 @@ justify-self: center;
 
 
 #cont_div{
-    position: relative;
+    position: absolute;
     display: flex;
     flex-direction: column;
     width: min-content;
-    margin: auto;
-    padding-top: 13em;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 40%;
     z-index: 1;
 }
 #cont_div p{
@@ -730,12 +733,15 @@ justify-self: center;
     margin-top: 0.2em;
 }
 #to_contact{
-    position: relative;
+    position: absolute;
     display: flex;
     margin: auto;
     width: min-content;
-    margin-top: 6em;
-    padding-bottom: 5.5em;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 80%;
     z-index: 1;
 }
 .foot{
