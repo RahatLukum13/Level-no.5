@@ -738,8 +738,10 @@ justify-self: center;
 }
 .foot{
     position: absolute;
+    justify-self: center;
     bottom: 1.5em;
-    margin: auto;
+    left: 0;
+    right: 0;
     z-index: 1;
 }
 #cont_img{
