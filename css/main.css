@@ -32,6 +32,8 @@
 
 
 @media screen and (max-width: 500px) {
+    .TTN_Thin{font-family: 'TTNorms-Regular';}
+    .TTN_ThinItalic{font-family: 'TTNorms-Regular';}
     #for_slide{margin: 5% 10%;}
     .projects{width: 90dvw; padding: 5dvw;}
     .projects_horiz{width: 88dvw;}
@@ -42,6 +44,8 @@
     .contain img{width: 88dvw; height: calc(88dvw / 16 * 9);}
 }
 @media screen and (min-width: 500px) {
+    .TTN_Thin{font-family: 'TTNorms-Thin';}
+    .TTN_ThinItalic{font-family: 'TTNorms-ThinItalic';}
     #for_slide{margin: 10% 15%;}
     .projects{width: 80dvw; padding: 10dvw;}
     .projects_horiz{width: 78dvw;}
