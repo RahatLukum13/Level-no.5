@@ -27,4 +27,7 @@ window.addEventListener('resize', () => {
         foot.style.height = 'auto';
         foot.classList.toggle('active');
     }
+    if(window.innerWidth < 1400 & foot.style.height == 'auto'){
+        foot.style.height == '0px';
+    }
 });
