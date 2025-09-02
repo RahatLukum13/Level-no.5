@@ -1,0 +1,170 @@
+@media screen and (max-width: 500px) {
+    .projects{width: 90dvw; padding: 5dvw;}
+    .projects_horiz{width: 88dvw;}
+    .projects_vertical{width: 42.8dvw;}
+    .projects img{height: calc(88dvw / 16 * 9);}
+    .projects_name{padding: 6dvw;}
+    .mainContainer{grid-template-columns: 1fr; padding: 5dvw;}
+    .contain img{width: 88dvw; height: calc(88dvw / 16 * 9);}
+}
+@media screen and (min-width: 500px) {
+    .projects{width: 80dvw; padding: 10dvw;}
+    .projects_horiz{width: 78dvw;}
+    .projects_vertical{width: 37.8dvw;}
+    .projects img{height: calc(78dvw / 16 * 9);}
+    .projects_name{padding: 11dvw;}
+    .mainContainer{grid-template-columns: repeat(2, 1fr); padding: 12dvw;}
+    .contain img{width: 36dvw; height: calc(36dvw / 16 * 9);}
+}
+@media screen and (max-width: 1100px) {
+    #button{height: 40px; padding-top: 90px;}
+    #button button{font-size: 11px;}
+    #button li{width: 128px;}
+    .projects_name{padding-top: 90px;}
+    .mainContainer{padding-top: 180px;}
+}
+@media screen and (min-width: 1100px) {
+    #button{height: 60px; padding-top: 110px;}
+    #button button{font-size: 17px;}
+    #button li{width: 192px;}
+    .projects_name{padding-top: 110px;}
+    .mainContainer{padding-top: 200px;}
+}
+
+
+
+#button{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+#button li{
+    position: relative;
+    margin-right: 2px;
+}
+#button button{
+    font-family: inherit;
+    appearance: none;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-image: url('https://rahatlukum13.github.io/Level-no.5/Png/0002.png');
+    background-size: cover;
+    color: white
+}
+#button button p{
+    position: absolute;
+    left: 7%;
+    bottom: 15%;
+}
+#button button:disabled{
+    cursor: default;
+    background-image: url('https://rahatlukum13.github.io/Level-no.5/Png/0001.png');
+}
+
+.mainContainer{
+    display: grid;
+    padding-bottom: 0;
+}
+.contain{
+    padding: 1dvw;
+}
+.contain img{
+    object-fit: cover;
+}
+.contain p{
+    line-height: 1.2em;
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
+}
+
+
+.projects{
+    display: flexbox;
+    padding-top: 0;
+}
+.projects img{
+    padding: 1dvw;
+    object-fit: cover;
+}
+.projects_name{
+    padding-bottom: 0.5em;
+    font-size: 4dvw;
+}
+
+
+#cont_div{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 40%;
+    z-index: 1;
+}
+#cont_div p{
+    width: min-content;
+    font-size: 45px;
+    margin-bottom: 1em;
+}
+.line_div{
+    display: flex;
+    height: 1em;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0.4em;
+}
+.line_div img{
+    object-fit: cover;
+    width: 0.9em;
+}
+.line_div div{
+    display: flex;
+    flex-direction: row;
+}
+.line_div div a{
+    padding-left: 0.5em;
+}
+.mail{
+    margin-top: 0.2em;
+}
+#to_contact{
+    position: absolute;
+    display: flex;
+    margin: auto;
+    width: min-content;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 80%;
+    z-index: 1;
+}
+.foot{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    bottom: 1.5em;
+    z-index: 1;
+}
+#cont_img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 70%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: opacity 1.5s ease-in-out;
+}

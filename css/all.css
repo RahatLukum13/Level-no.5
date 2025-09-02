@@ -1,0 +1,261 @@
+@font-face {
+    font-family: 'TTNorms-Regular';
+    src: local('TTNorms-Regular'),
+    url("https://rahatlukum13.github.io/Level-no.5/Шрифты/tt-norms-the-one-universal-grotesk/TTNorms-Regular.otf") format('opentype');
+}
+
+@font-face {
+    font-family: 'TTNorms-Bold';
+    src: local('TTNorms-Bold'),
+    url("https://rahatlukum13.github.io/Level-no.5/Шрифты/tt-norms-the-one-universal-grotesk/TTNorms-Bold.otf") format('opentype');
+}
+
+@font-face {
+    font-family: 'TTNorms-Thin';
+    src: local('TTNorms-Thin'),
+    url("https://rahatlukum13.github.io/Level-no.5/Шрифты/tt-norms-the-one-universal-grotesk/TTNorms-Thin.otf") format('opentype');
+}
+
+@font-face {
+    font-family: 'TTNorms-ThinItalic';
+    src: local('TTNorms-ThinItalic'),
+    url("https://rahatlukum13.github.io/Level-no.5/Шрифты/tt-norms-the-one-universal-grotesk/TTNorms-ThinItalic.otf") format('opentype');
+}
+
+
+@font-face {
+    font-family: 'Wremena Regular';
+    src: local('Wremena Regular'),
+    url("https://rahatlukum13.github.io/Level-no.5/Шрифты/wremena/Wremena Regular.otf") format('opentype'),
+    url("https://rahatlukum13.github.io/Level-no.5/Шрифты/wremena/Wremena Regular.woff") format('woff');
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .TTN_Thin{font-family: 'TTNorms-Regular';}
+    .TTN_ThinItalic{font-family: 'TTNorms-Regular';}
+}
+@media screen and (min-width: 500px) {
+    .TTN_Thin{font-family: 'TTNorms-Thin';}
+    .TTN_ThinItalic{font-family: 'TTNorms-ThinItalic';}
+}
+@media screen and (max-width: 1100px) {
+    header{height: 40px; font-size: 11px;}
+}
+@media screen and (min-width: 1100px) {
+    header{height: 60px;font-size: 17px;}
+}
+@media screen and (max-width: 1400px) {
+    #footer_ul{flex-direction: column;}
+    footer ul{justify-content: center;}
+    .footer_ul{flex-direction: column; height: 0px;}
+    footer > ul{transition: all 1s;}
+}
+@media screen and (min-width: 1400px) {
+    footer ul{justify-content: space-around;}
+    .footer_ul{height: auto;}
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    scrollbar-width: none;
+}
+
+body{
+    position: relative;
+    font-family: 'TTNorms-Regular', sans-serif;
+}
+
+p{
+    color: white;
+}
+
+img{
+    user-select: none;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    transition: color 0.5s ease;
+}
+
+ul{
+    list-style: none;
+}
+address{
+    font-style: normal;
+}
+
+
+
+.TTN_Bold{
+    font-family: 'TTNorms-Bold';
+    color: #ffffff;
+}
+.TTN_Thin{
+    color: #ffffff;
+}
+.TTN_ThinItalic{
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.Wrem_Regular{
+    font-family: 'Wremena Regular';
+    text-transform: uppercase;
+    line-height: 0.9em;
+    color: #ffffff;
+}
+
+
+
+header {
+    position: fixed;
+    width: calc(100vw - 50px);
+    margin: 25px;
+    z-index: 3;
+}
+nav {
+    position: relative;
+}
+.mainMenu{
+    position: relative;
+    top: 0;
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+.mainMenu li{
+    position: relative;
+    height: 100%;
+}
+.leftMainMenu{
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content:space-between;
+}
+.leftMainMenu li{
+    position: relative;
+    margin-right: 2px;
+}
+.mainMenu img:not(.logo){
+    position: relative;
+    height: 100%;
+}
+.mainMenu li a{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.mainMenu li p{
+    position: absolute;
+    height: min-content;
+    left: 7%;
+    bottom: 15%;
+}
+.logo{
+    position: absolute;
+    height: 65%;
+    width: auto;
+    left: 7%;
+    bottom: 20%;
+}
+.freePlaceDiv{
+    contain: strict;
+    flex-grow: 1;
+    margin-right: 2px;
+}
+.freePlaceDiv div{
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    float: left;
+}
+.freePlaceDiv img{
+    width: auto;
+    height: 100%;
+}
+
+
+
+main {
+    width: 100%;
+}
+.background{
+    position: fixed;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+
+
+
+.line{
+    display: inline-flex;
+    justify-content: space-between;
+}
+.pre{
+    display: grid;
+    vertical-align: top;
+    user-select: none;
+    white-space: pre;
+}
+
+
+
+footer{
+    text-align: center;
+    vertical-align: middle;
+    padding: 0% 5%;
+    margin: 1% 0;
+    z-index: 2;
+    font-size: 20px;
+}
+.footer_ul{
+    position: relative;
+    overflow: hidden;
+    line-height: 1.2em;
+}
+.footer_ul.active{
+    position: relative;
+    height: 306px;
+    overflow: hidden;
+}
+.footer_ul li{
+    height: 1.2em
+}
+footer ul{
+    display: flex;
+    flex-direction: row;
+}
+footer li{
+    margin-left: 0.3em;
+}
+footer img{
+    max-width: 100%;
+    height: 1.2em;
+    width: auto;
+}
+.li_margin{
+    margin: 1.5dvw;
+}
+footer p{
+    white-space: pre-wrap;
+}
+.footer{
+    position: absolute;
+    bottom: 2%;
+    width: 90%;
+    overflow: hidden;
+}
+
+

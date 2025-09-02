@@ -1,0 +1,83 @@
+@media screen and (max-width: 800px) {
+    #to_contact{font-size: 2.2dvw}
+}
+@media screen and (min-width: 800px) {
+    #to_contact{font-size: 1dvw}
+}
+
+
+
+#cont_div{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 40%;
+    z-index: 1;
+}
+#cont_div p{
+    width: min-content;
+    font-size: 45px;
+    margin-bottom: 1em;
+}
+.line_div{
+    display: flex;
+    height: 1em;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0.4em;
+}
+.line_div img{
+    object-fit: cover;
+    width: 0.9em;
+}
+.line_div div{
+    display: flex;
+    flex-direction: row;
+}
+.line_div div a{
+    padding-left: 0.5em;
+}
+.mail{
+    margin-top: 0.2em;
+}
+#to_contact{
+    position: absolute;
+    display: flex;
+    margin: auto;
+    width: min-content;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 80%;
+    z-index: 1;
+}
+.foot{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    bottom: 1.5em;
+    z-index: 1;
+}
+#cont_img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 70%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: opacity 1.5s ease-in-out;
+}
+
+
