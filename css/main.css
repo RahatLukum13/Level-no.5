@@ -471,7 +471,7 @@ footer ul{
     flex-direction: row;
 }
 footer li{
-    margin-left: 0.5dvw;
+    margin-left: 0.3em;
 }
 footer img{
     max-width: 100%;
