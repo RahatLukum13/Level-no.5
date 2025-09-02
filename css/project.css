@@ -5,7 +5,7 @@
     .projects img{height: calc(88dvw / 16 * 9);}
     .projects_name{padding: 6dvw;}
     .mainContainer{grid-template-columns: 1fr; padding: 5dvw;}
-    .contain img{width: 88dvw; height: calc(88dvw / 16 * 9);}
+    .contain img{width: 87.8dvw; height: calc(88dvw / 16 * 9);}
 }
 @media screen and (min-width: 500px) {
     .projects{width: 80dvw; padding: 10dvw;}
