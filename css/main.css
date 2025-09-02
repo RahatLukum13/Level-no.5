@@ -696,10 +696,8 @@ justify-self: center;
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-self: center;
     width: min-content;
-    left: 0;
-    right: 0;
+    margin: auto;
     padding-top: 13em;
     z-index: 1;
 }
@@ -732,9 +730,7 @@ justify-self: center;
 #to_contact{
     position: relative;
     display: flex;
-    justify-self: center;
-    left: 0;
-    right: 0;
+    margin: auto;
     width: min-content;
     margin-top: 6em;
     padding-bottom: 5.5em;
@@ -742,10 +738,8 @@ justify-self: center;
 }
 .foot{
     position: absolute;
-    justify-self: center;
     bottom: 1.5em;
-    left: 0;
-    right: 0;
+    margin: auto;
     z-index: 1;
 }
 #cont_img{
