@@ -28,6 +28,6 @@ window.addEventListener('resize', () => {
         foot.classList.toggle('active');
     }
     if(window.innerWidth < 1400 & foot.style.height == 'auto'){
-        foot.style.height == '0px';
+        foot.style.height = '0px';
     }
 });
