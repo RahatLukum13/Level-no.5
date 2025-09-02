@@ -184,11 +184,9 @@ ul{
     color: #ffffff;
 }
 .TTN_Thin{
-    font-family: 'TTNorms-Thin';
     color: #ffffff;
 }
 .TTN_ThinItalic{
-    font-family: 'TTNorms-ThinItalic';
     text-transform: uppercase;
     color: #ffffff;
 }
@@ -741,12 +739,10 @@ justify-self: center;
     z-index: 1;
 }
 .foot{
-    position: absolute;
-    justify-self: center;
+    position: relative;
     bottom: 1.5em;
-    left: 0;
-    right: 0;
     z-index: 1;
+    margin: auto;
 }
 #cont_img{
     position: absolute;
