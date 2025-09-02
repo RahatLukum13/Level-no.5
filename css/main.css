@@ -739,12 +739,14 @@ justify-self: center;
     z-index: 1;
 }
 .foot{
-    position: relative;
-    display: flex;
-    width: fit-content;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
     bottom: 1.5em;
     z-index: 1;
-    margin: auto;
 }
 #cont_img{
     position: absolute;
