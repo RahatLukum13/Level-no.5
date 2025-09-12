@@ -56,8 +56,8 @@
     width: 100%;
     height: 100%;
     border: none;
-    background-image: url('C:/Users/karma/OneDrive/Desktop/Для Димы/Png/0002.png');
-    /* background-image: url('https://rahatlukum13.github.io/Level-no.5/Png/0002.png'); */
+    /* background-image: url('C:/Users/karma/OneDrive/Desktop/Для Димы/Png/0002.png'); */
+    background-image: url('https://rahatlukum13.github.io/Level-no.5/Png/0002.png');
     background-size: cover;
     color: white;
 }
@@ -68,8 +68,8 @@
 }
 #button button:disabled{
     cursor: default;
-    background-image: url('C:/Users/karma/OneDrive/Desktop/Для Димы/Png/0001.png');
-    /* background-image: url('https://rahatlukum13.github.io/Level-no.5/Png/0001.png'); */
+    /* background-image: url('C:/Users/karma/OneDrive/Desktop/Для Димы/Png/0001.png'); */
+    background-image: url('https://rahatlukum13.github.io/Level-no.5/Png/0001.png');
 }
 
 .mainContainer{
@@ -187,8 +187,8 @@
     margin-top: calc(5px / sqrt(2) + 12.5px /2);
     opacity: 0;
     transition: opacity 0.4s ease-out;
-    background-image: url("C:/Users/karma/OneDrive/Desktop/Для Димы/Png/0002.png");
-    /* background-image: url("https://rahatlukum13.github.io/Level-no.5/Png/0002.png"); */
+    /* background-image: url("C:/Users/karma/OneDrive/Desktop/Для Димы/Png/0002.png"); */
+    background-image: url("https://rahatlukum13.github.io/Level-no.5/Png/0002.png");
     background-size: cover;
 }
 

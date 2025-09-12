@@ -8,30 +8,30 @@
 @font-face {
     font-family: 'TTNorms-Bold';
     src: local('TTNorms-Bold'),
-    url("C:/Users/karma/OneDrive/Desktop/Для Димы/Шрифты/tt-norms-the-one-universal-grotesk/TTNorms-Bold.otf") format('opentype'),
-    /* url("https://rahatlukum13.github.io/Level-no.5/Шрифты/tt-norms-the-one-universal-grotesk/TTNorms-Bold.otf") format('opentype'); */
+    /* url("C:/Users/karma/OneDrive/Desktop/Для Димы/Шрифты/tt-norms-the-one-universal-grotesk/TTNorms-Bold.otf") format('opentype'), */
+    url("https://rahatlukum13.github.io/Level-no.5/Шрифты/tt-norms-the-one-universal-grotesk/TTNorms-Bold.otf") format('opentype');
 }
 
 @font-face {
     font-family: 'TTNorms-Thin';
     src: local('TTNorms-Thin'),
-    url("C:/Users/karma/OneDrive/Desktop/Для Димы/Шрифты/tt-norms-the-one-universal-grotesk/TTNorms-Thin.otf") format('opentype'),
-    /* url("https://rahatlukum13.github.io/Level-no.5/Шрифты/tt-norms-the-one-universal-grotesk/TTNorms-Thin.otf") format('opentype'); */
+    /* url("C:/Users/karma/OneDrive/Desktop/Для Димы/Шрифты/tt-norms-the-one-universal-grotesk/TTNorms-Thin.otf") format('opentype'), */
+    url("https://rahatlukum13.github.io/Level-no.5/Шрифты/tt-norms-the-one-universal-grotesk/TTNorms-Thin.otf") format('opentype');
 }
 
 @font-face {
     font-family: 'TTNorms-ThinItalic';
     src: local('TTNorms-ThinItalic'),
-    url("C:/Users/karma/OneDrive/Desktop/Для Димы/Шрифты/tt-norms-the-one-universal-grotesk/TTNorms-ThinItalic.otf") format('opentype'),
-    /* url("https://rahatlukum13.github.io/Level-no.5/Шрифты/tt-norms-the-one-universal-grotesk/TTNorms-ThinItalic.otf") format('opentype'); */
+    /* url("C:/Users/karma/OneDrive/Desktop/Для Димы/Шрифты/tt-norms-the-one-universal-grotesk/TTNorms-ThinItalic.otf") format('opentype'), */
+    url("https://rahatlukum13.github.io/Level-no.5/Шрифты/tt-norms-the-one-universal-grotesk/TTNorms-ThinItalic.otf") format('opentype');
 }
 
 
 @font-face {
     font-family: 'Wremena Regular';
     src: local('Wremena Regular'),
-    url("C:/Users/karma/OneDrive/Desktop/Для Димы/Шрифты/wremena/Wremena Regular.otf") format('opentype'),
-    url("C:/Users/karma/OneDrive/Desktop/Для Димы/Шрифты/wremena/Wremena Regular.woff") format('woff'),
+    /* url("C:/Users/karma/OneDrive/Desktop/Для Димы/Шрифты/wremena/Wremena Regular.otf") format('opentype'), */
+    /* url("C:/Users/karma/OneDrive/Desktop/Для Димы/Шрифты/wremena/Wremena Regular.woff") format('woff'), */
     url("https://rahatlukum13.github.io/Level-no.5/Шрифты/wremena/Wremena Regular.otf") format('opentype'),
     url("https://rahatlukum13.github.io/Level-no.5/Шрифты/wremena/Wremena Regular.woff") format('woff');
 }
@@ -298,8 +298,8 @@ nav {
 }
 .header_contact > li{
     position: relative;
-    background-image: url('C:/Users/karma/OneDrive/Desktop/Для Димы/Png/0002.png');
-    /* background-image: url('https://rahatlukum13.github.io/Level-no.5/Png/0002.png'); */
+    /* background-image: url('C:/Users/karma/OneDrive/Desktop/Для Димы/Png/0002.png'); */
+    background-image: url('https://rahatlukum13.github.io/Level-no.5/Png/0002.png');
     background-size: cover;
     margin-bottom: 2px;
 }
@@ -311,22 +311,22 @@ nav {
     width: 100%;
     height: 100%;
     border: none;
-    background-image: url('C:/Users/karma/OneDrive/Desktop/Для Димы/Png/0002.png');
-    /* background-image: url('https://rahatlukum13.github.io/Level-no.5/Png/0002.png'); */
+    /* background-image: url('C:/Users/karma/OneDrive/Desktop/Для Димы/Png/0002.png'); */
+    background-image: url('https://rahatlukum13.github.io/Level-no.5/Png/0002.png');
     background-size: cover;
     color: white;
 }
 .header_contact > li:hover{
-    background-image: url('C:/Users/karma/OneDrive/Desktop/Для Димы/Png/0001.png');
-    /* background-image: url('https://rahatlukum13.github.io/Level-no.5/Png/0001.png'); */
+    /* background-image: url('C:/Users/karma/OneDrive/Desktop/Для Димы/Png/0001.png'); */
+    background-image: url('https://rahatlukum13.github.io/Level-no.5/Png/0001.png');
 }
 .header_contact button:hover{
-    background-image: url('C:/Users/karma/OneDrive/Desktop/Для Димы/Png/0001.png');
-    /* background-image: url('https://rahatlukum13.github.io/Level-no.5/Png/0001.png'); */
+    /* background-image: url('C:/Users/karma/OneDrive/Desktop/Для Димы/Png/0001.png'); */
+    background-image: url('https://rahatlukum13.github.io/Level-no.5/Png/0001.png');
 }
 .header_contact.active button{
-    background-image: url('C:/Users/karma/OneDrive/Desktop/Для Димы/Png/0001.png');
-    /* background-image: url('https://rahatlukum13.github.io/Level-no.5/Png/0001.png'); */
+    /* background-image: url('C:/Users/karma/OneDrive/Desktop/Для Димы/Png/0001.png'); */
+    background-image: url('https://rahatlukum13.github.io/Level-no.5/Png/0001.png');
 }
 
 
