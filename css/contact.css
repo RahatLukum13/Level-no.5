@@ -1,11 +1,14 @@
-@media screen and (max-width: 800px) {
-    #to_contact{font-size: 2.2dvw}
-}
-@media screen and (min-width: 800px) {
-    #to_contact{font-size: 1dvw}
+
+
+* {
+    scrollbar-width: none;
 }
 
 
+
+#contact{
+    font-size: calc(4rem / 3);
+}
 
 #cont_div{
     position: absolute;
@@ -16,24 +19,24 @@
     margin-right: auto;
     left: 0;
     right: 0;
-    top: 40%;
+    top: 30%;
     z-index: 1;
 }
 #cont_div p{
     width: min-content;
-    font-size: 45px;
     margin-bottom: 1em;
 }
 .line_div{
     display: flex;
-    height: 1em;
+    height: calc(4em / 3);
     flex-direction: row;
     justify-content: space-between;
     margin-top: 0.4em;
+    align-items: center
 }
 .line_div img{
     object-fit: cover;
-    width: 0.9em;
+    width: 1em;
 }
 .line_div div{
     display: flex;
@@ -41,9 +44,6 @@
 }
 .line_div div a{
     padding-left: 0.5em;
-}
-.mail{
-    margin-top: 0.2em;
 }
 #to_contact{
     position: absolute;
@@ -54,7 +54,7 @@
     margin-right: auto;
     left: 0;
     right: 0;
-    top: 80%;
+    top: 70%;
     z-index: 1;
 }
 .foot{
@@ -63,7 +63,7 @@
     margin-right: auto;
     left: 0;
     right: 0;
-    text-align: center;
+    justify-self:center;
     bottom: 1.5em;
     z-index: 1;
 }
@@ -78,6 +78,11 @@
     transform: translate(-50%, -50%);
     z-index: -1;
     transition: opacity 1.5s ease-in-out;
+}
+
+
+.Wrem_Regular{
+    font-size: 4rem;
 }
 
 

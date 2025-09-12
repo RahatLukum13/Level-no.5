@@ -1,58 +1,102 @@
 @font-face {
     font-family: 'TTNorms-Regular';
     src: local('TTNorms-Regular'),
-    url("https://rahatlukum13.github.io/Level-no.5/Шрифты/tt-norms-the-one-universal-grotesk/TTNorms-Regular.otf") format('opentype');
+    url("C:/Users/karma/OneDrive/Desktop/Для Димы/Шрифты/tt-norms-the-one-universal-grotesk/TTNorms-Regular.otf") format('opentype'),
+    /* url("https://rahatlukum13.github.io/Level-no.5/Шрифты/tt-norms-the-one-universal-grotesk/TTNorms-Regular.otf") format('opentype'); */
 }
 
 @font-face {
     font-family: 'TTNorms-Bold';
     src: local('TTNorms-Bold'),
-    url("https://rahatlukum13.github.io/Level-no.5/Шрифты/tt-norms-the-one-universal-grotesk/TTNorms-Bold.otf") format('opentype');
+    url("C:/Users/karma/OneDrive/Desktop/Для Димы/Шрифты/tt-norms-the-one-universal-grotesk/TTNorms-Bold.otf") format('opentype'),
+    /* url("https://rahatlukum13.github.io/Level-no.5/Шрифты/tt-norms-the-one-universal-grotesk/TTNorms-Bold.otf") format('opentype'); */
 }
 
 @font-face {
     font-family: 'TTNorms-Thin';
     src: local('TTNorms-Thin'),
-    url("https://rahatlukum13.github.io/Level-no.5/Шрифты/tt-norms-the-one-universal-grotesk/TTNorms-Thin.otf") format('opentype');
+    url("C:/Users/karma/OneDrive/Desktop/Для Димы/Шрифты/tt-norms-the-one-universal-grotesk/TTNorms-Thin.otf") format('opentype'),
+    /* url("https://rahatlukum13.github.io/Level-no.5/Шрифты/tt-norms-the-one-universal-grotesk/TTNorms-Thin.otf") format('opentype'); */
 }
 
 @font-face {
     font-family: 'TTNorms-ThinItalic';
     src: local('TTNorms-ThinItalic'),
-    url("https://rahatlukum13.github.io/Level-no.5/Шрифты/tt-norms-the-one-universal-grotesk/TTNorms-ThinItalic.otf") format('opentype');
+    url("C:/Users/karma/OneDrive/Desktop/Для Димы/Шрифты/tt-norms-the-one-universal-grotesk/TTNorms-ThinItalic.otf") format('opentype'),
+    /* url("https://rahatlukum13.github.io/Level-no.5/Шрифты/tt-norms-the-one-universal-grotesk/TTNorms-ThinItalic.otf") format('opentype'); */
 }
 
 
 @font-face {
     font-family: 'Wremena Regular';
     src: local('Wremena Regular'),
+    url("C:/Users/karma/OneDrive/Desktop/Для Димы/Шрифты/wremena/Wremena Regular.otf") format('opentype'),
+    url("C:/Users/karma/OneDrive/Desktop/Для Димы/Шрифты/wremena/Wremena Regular.woff") format('woff'),
     url("https://rahatlukum13.github.io/Level-no.5/Шрифты/wremena/Wremena Regular.otf") format('opentype'),
     url("https://rahatlukum13.github.io/Level-no.5/Шрифты/wremena/Wremena Regular.woff") format('woff');
 }
 
 
 
-@media screen and (max-width: 500px) {
+@media screen and (width <= 576px) {
+    html{font-size: 10px;}
+}
+@media screen and (576px < width <= 768px) {
+    html{font-size: 10.5px;}
+}
+@media screen and (768px < width <= 992px) {
+    html{font-size: 11px;}
+}
+@media screen and (992px < width <= 1200px) {
+    html{font-size: 12px;}
+}
+@media screen and (1200px < width <= 1400px) {
+    html{font-size: 14px;}
+}
+@media screen and (width > 1400px) {
+    html{font-size: 18px;}
+}
+
+
+
+
+@media screen and (max-width: 576px) {
     .TTN_Thin{font-family: 'TTNorms-Regular';}
     .TTN_ThinItalic{font-family: 'TTNorms-Regular';}
 }
-@media screen and (min-width: 500px) {
+@media screen and (width > 576px) {
     .TTN_Thin{font-family: 'TTNorms-Thin';}
     .TTN_ThinItalic{font-family: 'TTNorms-ThinItalic';}
 }
+
+
+@media screen and (max-width: 768px) {
+    .freePlaceDiv{margin-right: 0;}
+}
+@media screen and (width > 768px) {
+    .freePlaceDiv{margin-right: 2px;}
+}
+
+
 @media screen and (max-width: 1100px) {
-    header{height: 40px; font-size: 11px;}
+    html header{height: 40px; font-size: calc(17px * 2 / 3);}
+    .header_contact > li:not(.contact_li){width: 128.42px;}
+    .contact_li{width: 128.42px; height: 40px;}
 }
-@media screen and (min-width: 1100px) {
-    header{height: 60px;font-size: 17px;}
+@media screen and (width > 1100px) {
+    html header{height: 60px; font-size: 17px;}
+    .header_contact > li:not(.contact_li){width: 192.63px}
+    .contact_li{width: 192.63px; height: 60px;}
 }
+
+
 @media screen and (max-width: 1400px) {
     #footer_ul{flex-direction: column;}
     footer ul{justify-content: center;}
     .footer_ul{flex-direction: column; height: 0px;}
     footer > ul{transition: all 1s;}
 }
-@media screen and (min-width: 1400px) {
+@media screen and (width > 1400px) {
     footer ul{justify-content: space-around;}
     .footer_ul{height: auto;}
 }
@@ -62,12 +106,12 @@
 * {
     margin: 0;
     padding: 0;
-    scrollbar-width: none;
 }
 
 body{
     position: relative;
     font-family: 'TTNorms-Regular', sans-serif;
+    overflow-x: hidden;
 }
 
 p{
@@ -116,7 +160,7 @@ address{
 
 header {
     position: fixed;
-    width: calc(100vw - 50px);
+    width: calc(100% - 50px);
     margin: 25px;
     z-index: 3;
 }
@@ -132,7 +176,7 @@ nav {
     flex-direction: row;
     justify-content:space-between;
 }
-.mainMenu li{
+.mainMenu ul:not(.header_contact) li{
     position: relative;
     height: 100%;
 }
@@ -148,7 +192,7 @@ nav {
 }
 .mainMenu img:not(.logo){
     position: relative;
-    height: 100%;
+    max-height: 100%;
 }
 .mainMenu li a{
     position: relative;
@@ -171,7 +215,6 @@ nav {
 .freePlaceDiv{
     contain: strict;
     flex-grow: 1;
-    margin-right: 2px;
 }
 .freePlaceDiv div{
     width: 100%;
@@ -183,7 +226,108 @@ nav {
     width: auto;
     height: 100%;
 }
-
+.header_contact{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.header_contact ul{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+.header_contact ul li{
+    display: inline-block;
+    margin-left: 0.7em;
+}
+.header_contact ul li p{
+    line-height: 1em;
+    bottom: calc(0.5em * 40 / 17 - 0.5em);
+}
+.header_contact div{
+    display: flex;
+    align-items: center; 
+    width: 1.2em;
+    height: calc(1em * 40 / 17);
+}
+.header_contact > li:not(.contact_li){
+    height: calc(40 / 17 * 1em);
+}
+.header_contact img{
+    width: 1.2em;
+    height: 1.2em;
+    object-fit: contain;
+    vertical-align: middle
+}
+.header_contact > li:nth-child(1){
+    z-index: 6;
+}
+.header_contact > li:nth-child(2){
+    position: absolute;
+    z-index: 5;
+    transition: transform 0.33s ease-in-out;
+}
+.header_contact > li:nth-child(3){
+    position: absolute;
+    z-index: 4;
+    transition: transform 0.67s ease-in-out;
+}
+.header_contact > li:nth-child(4){
+    position: absolute;
+    z-index: 3;
+    transition: transform 1s ease-in-out;
+}
+.header_contact:hover > li:nth-child(2){
+    transform: translateY(calc(2px + 1em * 60 / 17));
+}
+.header_contact:hover > li:nth-child(3){
+    transform: translateY(calc(4px + 1em * 100 / 17));
+}
+.header_contact:hover > li:nth-child(4){
+    transform: translateY(calc(6px + 1em * 140 / 17));
+}
+.header_contact.active > li:nth-child(2){
+    transform: translateY(calc(2px + 1em * 60 / 17));
+}
+.header_contact.active > li:nth-child(3){
+    transform: translateY(calc(4px + 1em * 100 / 17));
+}
+.header_contact.active > li:nth-child(4){
+    transform: translateY(calc(6px + 1em * 140 / 17));
+}
+.header_contact > li{
+    position: relative;
+    background-image: url('C:/Users/karma/OneDrive/Desktop/Для Димы/Png/0002.png');
+    /* background-image: url('https://rahatlukum13.github.io/Level-no.5/Png/0002.png'); */
+    background-size: cover;
+    margin-bottom: 2px;
+}
+.header_contact button{
+    font-family: inherit;
+    font-size: inherit;
+    appearance: none;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-image: url('C:/Users/karma/OneDrive/Desktop/Для Димы/Png/0002.png');
+    /* background-image: url('https://rahatlukum13.github.io/Level-no.5/Png/0002.png'); */
+    background-size: cover;
+    color: white;
+}
+.header_contact > li:hover{
+    background-image: url('C:/Users/karma/OneDrive/Desktop/Для Димы/Png/0001.png');
+    /* background-image: url('https://rahatlukum13.github.io/Level-no.5/Png/0001.png'); */
+}
+.header_contact button:hover{
+    background-image: url('C:/Users/karma/OneDrive/Desktop/Для Димы/Png/0001.png');
+    /* background-image: url('https://rahatlukum13.github.io/Level-no.5/Png/0001.png'); */
+}
+.header_contact.active button{
+    background-image: url('C:/Users/karma/OneDrive/Desktop/Для Димы/Png/0001.png');
+    /* background-image: url('https://rahatlukum13.github.io/Level-no.5/Png/0001.png'); */
+}
 
 
 main {
@@ -204,10 +348,14 @@ main {
     justify-content: space-between;
 }
 .pre{
+    position: relative;
     display: grid;
+    width: min-content;
+    line-height: 1em;
     vertical-align: top;
     user-select: none;
     white-space: pre;
+    word-spacing: 0.01px;
 }
 
 
@@ -218,7 +366,7 @@ footer{
     padding: 0% 5%;
     margin: 1% 0;
     z-index: 2;
-    font-size: 20px;
+    font-size: calc(4rem / 3);
 }
 .footer_ul{
     position: relative;
@@ -238,7 +386,7 @@ footer ul{
     flex-direction: row;
 }
 footer li{
-    margin-left: 0.3em;
+    margin-left: 0.4em;
 }
 footer img{
     max-width: 100%;
@@ -256,6 +404,9 @@ footer p{
     bottom: 2%;
     width: 90%;
     overflow: hidden;
+}
+#footer_ul > :nth-child(5) > :nth-child(1) > :nth-child(2) > :nth-child(1) > :nth-child(1){
+    height: 1.5em;
 }
 
 

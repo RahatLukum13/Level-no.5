@@ -1,16 +1,21 @@
 var ratio = window.screen.availWidth / window.screen.availHeight;
-const WHeight = window.screen.availHeight - (window.outerHeight - window.innerHeight * (window.devicePixelRatio * 2 / 3));
-const WWidth = window.screen.availWidth - (window.outerWidth - window.innerWidth * (window.devicePixelRatio * 2 / 3));
+var WHeight = (window.screen.availHeight - (window.outerHeight - window.innerHeight * (window.devicePixelRatio * 2 / 3))) / (window.devicePixelRatio * 2 / 3);
+var WWidth = (window.screen.availWidth - (window.outerWidth - document.body.clientWidth * (window.devicePixelRatio * 2 / 3))) / (window.devicePixelRatio * 2 / 3);
 ratio = WWidth / WHeight;
 const main = document.getElementById("contact");
 const img = document.getElementById("cont_img");
-main.style.height = `${WHeight}px`;
+main.style.height = `${Math.max(WHeight, WWidth / 16 * 9)}px`;
 function low(){
     img.style.opacity = "40%";
 }
 function up(){
     img.style.opacity = "80%";
 }
+window.addEventListener('resize', () => {
+    WHeight = (window.screen.availHeight - (window.outerHeight - window.innerHeight * (window.devicePixelRatio * 2 / 3))) / (window.devicePixelRatio * 2 / 3);
+    WWidth = (window.screen.availWidth - (window.outerWidth - document.body.clientWidth * (window.devicePixelRatio * 2 / 3))) / (window.devicePixelRatio * 2 / 3);
+    main.style.height = `${Math.max(WHeight, WWidth / 16 * 9)}px`;
+});
 low();
 setTimeout(up, 2000);
 setInterval(low, 4000);
