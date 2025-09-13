@@ -174,11 +174,17 @@ video{
     margin-bottom: 1rem;
     transition: margin-left 1s ease-in-out;
 }
-#slide3.active .Wrem_Regular{
+#slide3 .Wrem_Regular{
     margin-left: calc(368.78 / 14 * 1rem + 2rem - 217 / 56 * 1em);
 }
-#slide4.active .Wrem_Regular{
+#slide4 .Wrem_Regular{
     margin-left: calc(624.38 / 14 * 1rem + 2rem - 455.729 / 56 * 1em);
+}
+#slide3.active .Wrem_Regular{
+    margin-left: 2rem;
+}
+#slide4.active .Wrem_Regular{
+    margin-left: 2rem;
 }
 
 
