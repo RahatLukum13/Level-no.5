@@ -17,6 +17,30 @@
 }
 
 
+@media screen and (width <= 576px) {
+    html{font-size: 7px;}
+    html footer{font-size: 9px;}
+}
+@media screen and (576px < width <= 768px) {
+    html{font-size: 9px;}
+    html footer{font-size: 10.5px;}
+}
+@media screen and (768px < width <= 992px) {
+    html{font-size: 12px;}
+    html footer{font-size: 11px;}
+}
+@media screen and (992px < width <= 1200px) {
+    html{font-size: 9px;}
+    html footer{font-size: 12px;}
+}
+@media screen and (1200px < width <= 1400px) {
+    html{font-size: 10.5px;}
+    html footer{font-size: 14px;}
+}
+@media screen and (width > 1400px) {
+    html{font-size: calc(30 / 3840 * 100dvw);}
+}
+
 
 
 * {
