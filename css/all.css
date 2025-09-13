@@ -116,6 +116,13 @@ body{
     height: 100vh;
     overflow-x: hidden;
 }
+main{
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+}
+
 
 p{
     color: white;
