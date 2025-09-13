@@ -18,26 +18,6 @@
 
 
 
-@media screen and (width <= 576px) {
-    html{font-size: 7px;}
-}
-@media screen and (576px < width <= 768px) {
-    html{font-size: 9px;}
-}
-@media screen and (768px < width <= 992px) {
-    html{font-size: 12px;}
-}
-@media screen and (992px < width <= 1200px) {
-    html{font-size: 9px;}
-}
-@media screen and (1200px < width <= 1400px) {
-    html{font-size: 10.5px;}
-}
-@media screen and (width > 1400px) {
-    html{font-size: 12px;}
-}
-
-
 
 * {
     scrollbar-width: none;
