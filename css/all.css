@@ -194,7 +194,6 @@ nav {
     margin-right: 2px;
 }
 .leftMainMenu li{
-    opacity: 0%;
     /* background-image: url('C:/Users/karma/OneDrive/Desktop/Для Димы/Png/0002.png'); */
     background-image: url('https://rahatlukum13.github.io/Level-no.5/Png/0002.png');
     background-size: cover;
@@ -212,6 +211,7 @@ nav {
 .mainMenu li img:not(.logo){
     position: relative;
     max-height: 100%;
+    opacity: 0%;
 }
 .mainMenu li a{
     position: relative;
