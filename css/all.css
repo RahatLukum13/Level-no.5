@@ -39,7 +39,7 @@
 
 
 @media screen and (width <= 576px) {
-    html{font-size: 10px;}
+    html{font-size: 9px;}
 }
 @media screen and (576px < width <= 768px) {
     html{font-size: 10.5px;}
