@@ -106,15 +106,15 @@ video{
 .burger_slide{
     position: absolute;
     left: 0;
-    transform: translateX(calc(-100%));
+    transform: translateX(0);
     transition: transform 1s ease-in-out;
     margin-top: 5.6rem;
 }
 #slide3.active .burger_slide{
-    transform: translateX(0);
+    transform: translateX(calc(-100%));
 }
 #slide4.active .burger_slide{
-    transform: translateX(0);
+    transform: translateX(calc(-100%));
 }
 
 

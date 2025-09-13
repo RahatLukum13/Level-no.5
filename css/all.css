@@ -54,7 +54,7 @@
     html{font-size: 14px;}
 }
 @media screen and (width > 1400px) {
-    html{font-size: 18px;}
+    html{font-size: calc(30 / 3840 * 100dvw);}
 }
 
 
@@ -193,7 +193,23 @@ nav {
     position: relative;
     margin-right: 2px;
 }
-.mainMenu img:not(.logo){
+.leftMainMenu li img:not(.logo){
+    opacity: 0%;
+    /* background-image: url('C:/Users/karma/OneDrive/Desktop/Для Димы/Png/0002.png'); */
+    background-image: url('https://rahatlukum13.github.io/Level-no.5/Png/0002.png');
+    background-size: cover;
+}
+.leftMainMenu li:hover img:not(.logo){
+    /* background-image: url('C:/Users/karma/OneDrive/Desktop/Для Димы/Png/0001.png'); */
+    background-image: url('https://rahatlukum13.github.io/Level-no.5/Png/0001.png');
+    background-size: cover;
+}
+.leftMainMenu li.active img:not(.logo){
+    /* background-image: url('C:/Users/karma/OneDrive/Desktop/Для Димы/Png/0001.png'); */
+    background-image: url('https://rahatlukum13.github.io/Level-no.5/Png/0001.png');
+    background-size: cover;
+}
+.mainMenu li img:not(.logo){
     position: relative;
     max-height: 100%;
 }
@@ -405,11 +421,49 @@ footer p{
 .footer{
     position: absolute;
     bottom: 2%;
-    width: 90%;
+    width: 100%;
     overflow: hidden;
 }
 #footer_ul > :nth-child(5) > :nth-child(1) > :nth-child(2) > :nth-child(1) > :nth-child(1){
     height: 1.5em;
+}
+
+
+
+.to-up {
+    position: relative;
+    display: grid;
+    grid-template: grid-template-columns; 
+    grid-template-columns: repeat(4, 1fr);
+    place-items: center;
+    margin-top: calc(5px / sqrt(2) + 12.5px /2);
+    opacity: 0;
+    transition: opacity 0.4s ease-out;
+    /* background-image: url("C:/Users/karma/OneDrive/Desktop/Для Димы/Png/0002.png"); */
+    background-image: url("https://rahatlukum13.github.io/Level-no.5/Png/0002.png");
+    background-size: cover;
+}
+
+
+
+.to-up > span {
+    transform-origin: center center;
+    display: block;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+    justify-self: center;
+}
+
+
+.to-up > span:nth-child(2) {
+    width: 40%;
+    height: calc(25% * sqrt(2) + 10%);
+    transform: rotate(45deg);
+}
+.to-up > span:nth-child(3) {
+    width: 40%;
+    height: calc(25% * sqrt(2) + 10%);
+    transform: rotate(-45deg);
 }
 
 
