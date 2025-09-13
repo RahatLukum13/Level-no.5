@@ -6,7 +6,6 @@
 }
 
 
-
 #sec_slide_pre div{
     line-height: 0.8em;
     letter-spacing: 0;
@@ -121,7 +120,6 @@ video{
 
 
 #slide3{
-    overflow-x: hidden;
     padding-top: 9%;
 }
 #slide3 .pre{
@@ -413,7 +411,6 @@ video{
 #slide4{
     padding-top: 9%;
     padding-bottom: 5%;
-    overflow-x: hidden;
 }
 #slide4 .pre{
     padding: 1.5em 2em;
