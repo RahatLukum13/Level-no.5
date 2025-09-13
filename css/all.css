@@ -208,10 +208,12 @@ nav {
     background-image: url('https://rahatlukum13.github.io/Level-no.5/Png/0001.png');
     background-size: cover;
 }
+.leftMainMenu li img:not(.logo){
+    opacity: 0%;
+}
 .mainMenu li img:not(.logo){
     position: relative;
     max-height: 100%;
-    opacity: 0%;
 }
 .mainMenu li a{
     position: relative;
