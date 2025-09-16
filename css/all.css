@@ -436,6 +436,9 @@ footer p{
 #footer_ul > :nth-child(5) > :nth-child(1) > :nth-child(2) > :nth-child(1) > :nth-child(1){
     height: 1.5em;
 }
+.footer_ul > :nth-child(5) > :nth-child(1) > :nth-child(2) > :nth-child(1) > :nth-child(1){
+    height: 1.5em;
+}
 
 
 
