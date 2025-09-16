@@ -39,7 +39,7 @@
 
 
 @media screen and (width <= 576px) {
-    html{font-size: 9px;}
+    html{font-size: 8.5px;}
 }
 @media screen and (576px < width <= 768px) {
     html{font-size: 10.5px;}
@@ -70,10 +70,10 @@
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 702px) {
     .freePlaceDiv{margin-right: 0;}
 }
-@media screen and (width > 768px) {
+@media screen and (width > 702px) {
     .freePlaceDiv{margin-right: 2px;}
 }
 
@@ -112,7 +112,7 @@
 body{
     position: relative;
     font-family: 'TTNorms-Regular', sans-serif;
-    width: 100vw;
+    width: 100%;
     height: auto;
     overflow-x: hidden;
 }
