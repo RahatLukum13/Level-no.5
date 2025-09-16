@@ -113,7 +113,7 @@ body{
     position: relative;
     font-family: 'TTNorms-Regular', sans-serif;
     width: 100vw;
-    height: 100vh;
+    height: auto;
     overflow-x: hidden;
 }
 main{
