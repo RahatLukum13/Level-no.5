@@ -45,6 +45,6 @@ window.addEventListener("scroll", function () {
 });
 
 button.addEventListener("click", but);
-menuIcon.addEventListener('click', toggleMenuIcon);
+Icon.addEventListener('click', toggleMenuIcon);
 
 
