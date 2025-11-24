@@ -1,6 +1,6 @@
 var ratio = window.screen.availWidth / window.screen.availHeight;
 var WHeight = (window.screen.availHeight - (window.outerHeight - window.innerHeight * (window.devicePixelRatio * 2 / 3))) / (window.devicePixelRatio * 2 / 3);
-var WWidth = (window.screen.availWidth - (window.outerWidth - document.body.clientWidth * (window.devicePixelRatio * 2 / 3))) / (window.devicePixelRatio * 2 / 3);
+var WWidth = (window.screen.availWidth - (window.outerWidth - window.innerWidth * (window.devicePixelRatio * 2 / 3))) / (window.devicePixelRatio * 2 / 3);
 ratio = WWidth / WHeight;
 const main = document.getElementById("ab_us_main");
 const sofa = document.getElementById("ab_us_sofa");
@@ -20,7 +20,7 @@ main.style.height = `${Math.max(WHeight, ul.scrollHeight + WWidth / 4, sofa.scro
 menuIcon.addEventListener('click', toggleMenuIcon);
 window.addEventListener('resize', () => {
     WHeight = (window.screen.availHeight - (window.outerHeight - window.innerHeight * (window.devicePixelRatio * 2 / 3))) / (window.devicePixelRatio * 2 / 3);
-    WWidth = (window.screen.availWidth - (window.outerWidth - document.body.clientWidth * (window.devicePixelRatio * 2 / 3))) / (window.devicePixelRatio * 2 / 3);
+    WWidth = (window.screen.availWidth - (window.outerWidth - window.innerWidth * (window.devicePixelRatio * 2 / 3))) / (window.devicePixelRatio * 2 / 3);
     sofa.style.bottom = `0px`;
     sofa.style.width = `${WWidth}px`;
     main.style.height = `${Math.max(WHeight, ul.scrollHeight + WWidth / 4, sofa.scrollHeight)}px`;

@@ -38,7 +38,11 @@
 
 
 
-@media screen and (width <= 576px) {
+@media screen and (max-width: 450px){
+    html{font-size: 3.286dvw;}
+    html footer{font-size: 1rem;}
+}
+@media screen and (450px < width <= 576px) {
     html{font-size: 8.5px;}
 }
 @media screen and (576px < width <= 768px) {
@@ -70,11 +74,31 @@
 }
 
 
-@media screen and (max-width: 702px) {
-    .freePlaceDiv{margin-right: 0;}
+@media screen and (max-width: 720px) {
+    .leftMainMenu li:nth-child(2){display: none;}
+    .leftMainMenu li:nth-child(3){display: none;}
+    .leftMainMenu li:nth-child(4){display: none;}
+    .header_contact > li:first-child div{display: grid}
+    .header_contact > li:first-child p{display: none}
+    .header_contact > li:nth-child(2){display: none;}
+    .header_contact > li:nth-child(3){display: none;}
+    .header_contact > li:nth-child(4){display: none;}
+    .header_contact > li:nth-child(5){display: block;}
+    .header_contact > li:nth-child(6){display: block;}
+    .header_contact > li:nth-child(7){display: block;}
 }
-@media screen and (width > 702px) {
-    .freePlaceDiv{margin-right: 2px;}
+@media screen and (width > 720px) {
+    .leftMainMenu li:nth-child(2){display: block;}
+    .leftMainMenu li:nth-child(3){display: block;}
+    .leftMainMenu li:nth-child(4){display: block;}
+    .header_contact > li:first-child div{display: none}
+    .header_contact > li:first-child p{display: block}
+    .header_contact > li:nth-child(2){display: block;}
+    .header_contact > li:nth-child(3){display: block;}
+    .header_contact > li:nth-child(4){display: block;}
+    .header_contact > li:nth-child(5){display: none;}
+    .header_contact > li:nth-child(6){display: none;}
+    .header_contact > li:nth-child(7){display: none;}
 }
 
 
@@ -82,11 +106,13 @@
     html header{height: 40px; font-size: calc(17px * 2 / 3);}
     .header_contact > li:not(.contact_li){width: 128.42px;}
     .contact_li{width: 128.42px; height: 40px;}
+    .to-up{width: 20px; height: 20px;}
 }
 @media screen and (width > 1100px) {
     html header{height: 60px; font-size: 17px;}
     .header_contact > li:not(.contact_li){width: 192.63px}
     .contact_li{width: 192.63px; height: 60px;}
+    .to-up{width: 30px; height: 30px;}
 }
 
 
@@ -243,6 +269,7 @@ nav {
 .freePlaceDiv{
     contain: strict;
     flex-grow: 1;
+    margin-right: 2px;
 }
 .freePlaceDiv div{
     width: 100%;
@@ -306,6 +333,21 @@ nav {
     z-index: 3;
     transition: transform 1s ease-in-out;
 }
+.header_contact > li:nth-child(5){
+    position: absolute;
+    z-index: 5;
+    transition: transform 0.33s ease-in-out;
+}
+.header_contact > li:nth-child(6){
+    position: absolute;
+    z-index: 4;
+    transition: transform 0.67s ease-in-out;
+}
+.header_contact > li:nth-child(7){
+    position: absolute;
+    z-index: 3;
+    transition: transform 1s ease-in-out;
+}
 .header_contact:hover > li:nth-child(2){
     transform: translateY(calc(2px + 1em * 60 / 17));
 }
@@ -324,6 +366,24 @@ nav {
 .header_contact.active > li:nth-child(4){
     transform: translateY(calc(6px + 1em * 140 / 17));
 }
+.header_contact:hover > li:nth-child(5){
+    transform: translateY(calc(2px + 1em * 60 / 17));
+}
+.header_contact:hover > li:nth-child(6){
+    transform: translateY(calc(4px + 1em * 100 / 17));
+}
+.header_contact:hover > li:nth-child(7){
+    transform: translateY(calc(6px + 1em * 140 / 17));
+}
+.header_contact.active > li:nth-child(5){
+    transform: translateY(calc(2px + 1em * 60 / 17));
+}
+.header_contact.active > li:nth-child(6){
+    transform: translateY(calc(4px + 1em * 100 / 17));
+}
+.header_contact.active > li:nth-child(7){
+    transform: translateY(calc(6px + 1em * 140 / 17));
+}
 .header_contact > li{
     position: relative;
     /* background-image: url('C:/Users/karma/OneDrive/Desktop/Для Димы/Png/0002.png'); */
@@ -332,6 +392,7 @@ nav {
     margin-bottom: 2px;
 }
 .header_contact button{
+    position: relative;
     font-family: inherit;
     font-size: inherit;
     appearance: none;
@@ -356,6 +417,44 @@ nav {
     /* background-image: url('C:/Users/karma/OneDrive/Desktop/Для Димы/Png/0001.png'); */
     background-image: url('https://rahatlukum13.github.io/Level-no.5/Png/0001.png');
 }
+
+
+.contact_li div{
+    position: absolute;
+    grid-template-rows: repeat(3, 1fr);
+    width: 30px;
+    height: 25px;
+    left: 7%;
+    bottom: 7.5px;
+    overflow: hidden;
+}
+.contact_li span{
+    height: 3px;
+    display: block;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+    justify-self: left;
+}
+.contact_li span:nth-child(1){
+    width: 18px;
+}
+.contact_li span:nth-child(2){
+    width: 30px;
+}
+.contact_li span:nth-child(3){
+    width: 23px;
+}
+
+
+
+.header_contact:hover span:nth-child(1){
+    transform: translateX(12px);
+}
+.header_contact:hover span:nth-child(3){
+    transform: translateX(7px);
+}
+
+
 
 
 main {
@@ -389,6 +488,7 @@ main {
 
 
 footer{
+    width: calc(100dvw - 10%);
     text-align: center;
     vertical-align: middle;
     padding: 0% 5%;

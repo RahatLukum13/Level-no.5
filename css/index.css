@@ -1,8 +1,35 @@
-@media screen and (max-width: 768px) {
+@media screen and (450px < width <= 768px) {
     html .slide_ul{font-size: 3dvw;}
 }
 @media screen and (width > 768px) {
     html .slide_ul{font-size: 2.15dvw;}
+}
+
+@media screen and (width <= 450px) {
+    #video1{display: none;}
+    #video2{display: block;}
+    .slide_ul{flex-direction: column;}
+    #second_slide_logo img{height: 6.4em;}
+    #back_sofa{display: none;}
+    .back_mob{display: block;}
+    #second_slide_logo{margin-top: 0.5em;}
+    .Wrem_Regular{font-size: 3rem;}
+    #Thin1{display: none;}
+    #Thin2{width: calc(100dvw - 3.8rem);}
+    #Thin2 .line{width: calc(100dvw - 3.8rem);}
+    #slide4_text{width: 100dvw;}
+}
+@media screen and (width > 450px) {
+    #video1{display: block;}
+    #video2{display: none;}
+    .slide_ul{flex-direction: row;}
+    #second_slide_logo img{height: 3.2em;}
+    #back_sofa{display: block;}
+    .back_mob{display: none;}
+    #second_slide_logo{margin-top: 0;}
+    .Wrem_Regular{font-size: 4rem;}
+    #Thin2{display: none;}
+    #slide4_text{width: min-content;}
 }
 
 
@@ -62,6 +89,24 @@ video{
     transform: translate(-20%, 0);
     min-width: 100%;
 }
+.back_mob{
+    position: absolute;
+    bottom: 0;
+    height: 100dvw;
+    width: 100dvw;
+}
+#back_sofa2{
+    position: absolute;
+    width: 100dvw;
+    bottom: 0;
+}
+#back_ligth{
+    position: absolute;
+    width: 76dvw;
+    opacity: 50%;
+    bottom: 18dvw;
+    transition: opacity 1.5s ease-in-out;
+}
 
 .slide_ul{
     display: flex;
@@ -79,7 +124,6 @@ video{
 }
 #second_slide_logo img{
     display: block;
-    height: 3.2em;
 }
 #sec_slide_pre{
     position: relative;
@@ -157,6 +201,7 @@ video{
     width: fit-content;
     padding-top: 1.9rem;
 }
+
 #slide3 .TTN_ThinItalic{
     display: flex;
     align-self: flex-end;
@@ -167,7 +212,6 @@ video{
 
 .Wrem_Regular{
     display: flex;
-    font-size: 4rem;
     align-self: flex-end;
     margin-right: 2rem;
     margin-left: 2rem;
@@ -470,7 +514,6 @@ video{
 #slide4 > div{
     display: flex;
     flex-direction: column;
-    width: min-content;
     padding-top: 1.9rem;
 }
 #slide4 .TTN_ThinItalic{

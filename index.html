@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initialscale=1.0">
     <title>Level no.5</title>
-    <!-- <base href="C:\Users\karma\OneDrive\Desktop\Для Димы\"> -->
+    <!-- <base href="C:\Users\karma\OneDrive\Документы\GitHub\Level-no.5\"> -->
     <base href="https://rahatlukum13.github.io/Level-no.5/">
     <link rel="stylesheet" href="css\all.css">
     <link rel="stylesheet" href="css\index.css">
@@ -24,7 +24,9 @@
                 <li class="freePlaceDiv"><div><img src="Png\big_header.jpg" alt=""></div></li>
                 <li>
                     <ul class="header_contact">
-                        <li class="contact_li"><button id="head_but"><p>написать нам</p></button></li>
+                        <li class="contact_li">
+                            <button id="head_but"><p>написать нам</p><div><span></span><span></span><span></span></div></button>
+                        </li>
                         <li>
                             <a href="https://t.me/dimakarma">
                                 <ul>
@@ -49,6 +51,10 @@
                                 </ul>
                             </a>
                         </li>
+
+                        <li><a href="проекты.html"><p>проекты</p></a></li>
+                        <li><a href="о нас.html"><p>о нас</p></a></li>
+                        <li><a href="контакты.html"><p>контакты</p></a></li>
                     </ul>
                 </li>
             </ul>
@@ -66,6 +72,7 @@
             <li id="slide1">
                 <div id="video">
                     <video id="video1" src="Png\АНИМАЦИЯ САЙТ.mp4" autoplay="true" loop="true" muted="true" preload="auto"></video>
+                    <video id="video2" src="Content\6_animation.mp4" autoplay="true" loop="true" muted="true" preload="auto"></video>
                 </div>
             </li>
             <li id="slide2">
@@ -80,6 +87,10 @@
                     <li id="second_slide_logo"><img src="Png\04_logo_blue_noise.png" alt=""></li>
                 </ul>
                 <img id="back_sofa" src="Png\04_sofa.png" alt="">
+                <div class="back_mob">
+                    <img id="back_sofa2" src="Content\10.png" alt="">
+                    <img id="back_ligth" src="Content\11_opacity_30%.png" alt="">
+                </div>
             </li>
             <li id="slide3">
                 <ul id="background_3">
@@ -121,7 +132,7 @@
                     <li><img src="Png\12321321312312312.jpg" alt=""></li>
                     <li><img src="Png\54654654645645.jpg" alt=""></li>
                 </ul>
-                <div>
+                <div id="slide4_text">
                     <div class="TTN_ThinItalic">пространства</div>
                     <div class="Wrem_Regular">коммерческие</div>
                     <div class="burger_slide">
@@ -140,16 +151,26 @@
                                 <span></span>
                             </div>
                         </div>
-                        <div class="TTN_Thin"><div class="pre">
-                            <div class="line"><div>Хороший</div> <div>коммерческий</div> <div>интерьер</div> <div>—</div> <div>это</div> <div>инвестиция,</div> <div>которая</div> <div>работает</div> <div>на</div> <div>бизнес</div> <div>и</div> <div>возвращается</div></div>
-                            <div class="line"><div>прибылью.</div> <div>Он</div> <div>формирует</div> <div>доверие,</div> <div>усиливает</div> <div>образ</div> <div>бренда</div> <div>и</div> <div>удерживает</div> <div>внимание</div> <div>клиента</div></div>
-                            <div class="line"><div>дольше.</div> <div>В</div> <div>LEVEL</div> <div>no.5</div> <div>мы</div> <div>создаём</div> <div>пространства,</div> <div>которые</div> <div>влияют</div> <div>на</div> <div>эмоции</div> <div>посетителей</div> <div>и</div> <div>их</div></div>
-                            <div class="line"><div>решения,</div> <div>превращая</div> <div>атмосферу</div> <div>в</div> <div>инструмент</div> <div>продаж.</div> <div>Не</div> <div>важно,</div> <div>это</div> <div>интерьер</div> <div>ресторана,</div></div>
-                            <div class="line"><div>офисного</div> <div>пространства</div> <div>или</div> <div>шоурума</div> <div>—</div> <div>всё</div> <div>работает</div> <div>по</div> <div>единой</div> <div>логике:</div> <div>эстетика</div> <div>сочетается</div> <div>с</div></div>
-                            <div class="line">точным пониманием бизнес-задач. От планировки, которая направляет поток гостей, до деталей,</div>
-                            <div class="line"><div>которые</div> <div>побуждают</div> <div>возвращаться</div> <div>снова</div> <div>и</div> <div>снова.</div> <div>Мы</div> <div>проектируем</div> <div>интерьеры,</div> <div>которые</div> <div>не</div> <div>просто</div></div>
-                            <div class="line">красивы — они приносят результат.</div>
-                        </div></div>
+                        <div class="TTN_Thin">
+                            <div class="pre" id="Thin1">
+                                <div class="line"><div>Хороший</div> <div>коммерческий</div> <div>интерьер</div> <div>—</div> <div>это</div> <div>инвестиция,</div> <div>которая</div> <div>работает</div> <div>на</div> <div>бизнес</div> <div>и</div> <div>возвращается</div></div>
+                                <div class="line"><div>прибылью.</div> <div>Он</div> <div>формирует</div> <div>доверие,</div> <div>усиливает</div> <div>образ</div> <div>бренда</div> <div>и</div> <div>удерживает</div> <div>внимание</div> <div>клиента</div></div>
+                                <div class="line"><div>дольше.</div> <div>В</div> <div>LEVEL</div> <div>no.5</div> <div>мы</div> <div>создаём</div> <div>пространства,</div> <div>которые</div> <div>влияют</div> <div>на</div> <div>эмоции</div> <div>посетителей</div> <div>и</div> <div>их</div></div>
+                                <div class="line"><div>решения,</div> <div>превращая</div> <div>атмосферу</div> <div>в</div> <div>инструмент</div> <div>продаж.</div> <div>Не</div> <div>важно,</div> <div>это</div> <div>интерьер</div> <div>ресторана,</div></div>
+                                <div class="line"><div>офисного</div> <div>пространства</div> <div>или</div> <div>шоурума</div> <div>—</div> <div>всё</div> <div>работает</div> <div>по</div> <div>единой</div> <div>логике:</div> <div>эстетика</div> <div>сочетается</div> <div>с</div></div>
+                                <div class="line">точным пониманием бизнес-задач. От планировки, которая направляет поток гостей, до деталей,</div>
+                                <div class="line"><div>которые</div> <div>побуждают</div> <div>возвращаться</div> <div>снова</div> <div>и</div> <div>снова.</div> <div>Мы</div> <div>проектируем</div> <div>интерьеры,</div> <div>которые</div> <div>не</div> <div>просто</div></div>
+                                <div class="line">красивы — они приносят результат.</div>
+                            </div>
+                            <div class="pre" id="Thin2">
+                                <div class="line"><div>LEVEL</div> <div>no.5</div> <div>создает</div> <div>коммерческие</div> <div>интерьеры,</div> <div>которые</div></div>
+                                <div class="line"><div>работают</div> <div>на</div> <div>ваш</div> <div>бизнес.</div> <div>Мы</div> <div>превращаем</div> <div>пространство</div></div>
+                                <div class="line"><div>в</div> <div>инструмент</div> <div>продаж</div> <div>через</div> <div>продуманную</div> <div>эстетику</div> <div>и</div></div>
+                                <div class="line"><div>эффективную</div> <div>планировку.</div> <div>Наши</div> <div>проекты</div> <div>укрепляют</div></div>
+                                <div class="line"><div>бренд</div> <div>повышают</div> <div>лояльность</div> <div>клиентов,</div> <div>принося</div></div>
+                                <div class="line">измеримый результат.</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </li>
