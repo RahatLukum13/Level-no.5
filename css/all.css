@@ -1,8 +1,8 @@
 @font-face {
     font-family: 'TTNorms-Regular';
     src: local('TTNorms-Regular'),
-    url("C:/Users/karma/OneDrive/Desktop/Для Димы/Шрифты/tt-norms-the-one-universal-grotesk/TTNorms-Regular.otf") format('opentype'),
-    /* url("https://rahatlukum13.github.io/Level-no.5/Шрифты/tt-norms-the-one-universal-grotesk/TTNorms-Regular.otf") format('opentype'); */
+    /* url("C:/Users/karma/OneDrive/Desktop/Для Димы/Шрифты/tt-norms-the-one-universal-grotesk/TTNorms-Regular.otf") format('opentype'), */
+    url("https://rahatlukum13.github.io/Level-no.5/Шрифты/tt-norms-the-one-universal-grotesk/TTNorms-Regular.otf") format('opentype');
 }
 
 @font-face {
