@@ -1,8 +1,8 @@
 @media screen and (max-width: 992px) {
     .ab_us_ul{flex-direction: column;}
     #Dima{margin: 0;}
-    .ab_ul_img{width: auto;}
-    .ab_ul_img li img{width: calc((374.99 / 9 * 1rem - 2rem) / 2); margin-bottom: 2rem;}
+    .ab_ul_img{width: auto; height: calc((374.99 / 9 * 1rem - 2rem) / 2); margin-bottom: 1rem;}
+    .ab_ul_img li img{width: calc((374.99 / 9 * 1rem - 2rem) / 2);}
 }
 @media screen and (width > 992px) {
     .ab_us_ul{flex-direction: row;}
@@ -18,9 +18,26 @@
 
 
 @media screen and (width <= 576px) {
-    html{font-size: 7px;}
-    html footer{font-size: 9px;}
+    html{font-size: 3.42lvw;}
+    #ab_us_h{margin-left: auto;}
+    #Thin1{display: none;}
+    #ab_us_sofa{display: none;}
+    .ab_us_ul {margin-top: calc(169px / 3 + 1.7rem);}
+    .ab_ul_img {justify-content: right; height: calc((374.99rem / 20 - 2rem) / 2);}
+    .ab_ul_img li{margin-right: 1.2rem;}
+    .ab_ul_img li img{width: calc((374.99rem / 20 - 2rem) / 2);}
+    #ab_us_h{font-size: 3.3rem;}
 }
+@media screen and (width > 576px) {
+    #Thin2{display: none;}
+    #ab_us_kit{display: none;}
+    .ab_us_ul {margin-top: 10%;}
+    .ab_ul_img {justify-content: space-between;}
+    .ab_ul_img li{margin-right: 2rem;}
+    #ab_us_h{font-size: 4rem;}
+}
+
+
 @media screen and (576px < width <= 768px) {
     html{font-size: 9px;}
     html footer{font-size: 10.5px;}
@@ -133,7 +150,6 @@ justify-self: center;
     display: flex;
     justify-content: space-between;
     margin-left: 8%;
-    margin-top: 10%;
 }
 .ab_us_ul img{
     max-width: 100%;
@@ -141,19 +157,17 @@ justify-self: center;
 .ab_ul_img{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    height: 100%;
 }
 .ab_ul_img li{
-    margin-right: 2rem;
-    contain: content;
+    overflow: hidden;
 }
 .ab_ul_img li img{
     position: relative;
     display: inline-block;
+    object-fit: cover;
 }
 #ab_us_pre{
-    padding: 5% 0;
+    padding: 1rem 0;
 }
 #ab_us_main .pre div{
     height: 2.4ex;
@@ -161,6 +175,13 @@ justify-self: center;
 #ab_us_sofa{
     width: 100dvw;
 }
+#ab_us_kit{
+    width: 100dvw;
+}
+
+#ab_us_h{
+    display: block;
+    text-align: right;
+}
 
 
-#ab_us_h{font-size: 4rem;}

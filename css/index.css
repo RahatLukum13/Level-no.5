@@ -134,7 +134,7 @@ video{
 #slide3 .pre::before{
     position: absolute; 
     content: "";
-    /* background-image: url("C:/Users/karma/OneDrive/Desktop/Для Димы/Png/plashka.jpg"); */
+    /* background-image: url("C:/Users/karma/Desktop/Level-no.5/Png/plashka.jpg"); */
     background-image: url("https://rahatlukum13.github.io/Level-no.5/Png/plashka.jpg");
     background-size: cover;
     opacity: 0.75;
@@ -466,7 +466,7 @@ video{
 #slide4 .pre::before{
     position: absolute; 
     content: "";
-    /* background-image: url("C:/Users/karma/OneDrive/Desktop/Для Димы/Png/plashka.jpg"); */
+    /* background-image: url("C:/Users/karma/Desktop/Level-no.5/Png/plashka.jpg"); */
     background-image: url("https://rahatlukum13.github.io/Level-no.5/Png/plashka.jpg");
     background-size: cover;
     opacity: 0.85;

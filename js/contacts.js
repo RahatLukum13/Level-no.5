@@ -1,5 +1,5 @@
 var ratio = window.screen.availWidth / window.screen.availHeight;
-var WHeight = (window.screen.availHeight - (window.outerHeight - window.innerHeight * (window.devicePixelRatio * 2 / 3))) / (window.devicePixelRatio * 2 / 3);
+const WHeight = (window.screen.availHeight - (window.outerHeight - window.innerHeight * (window.devicePixelRatio * 2 / 3))) / (window.devicePixelRatio * 2 / 3);
 var WWidth = (window.screen.availWidth - (window.outerWidth - window.innerWidth * (window.devicePixelRatio * 2 / 3))) / (window.devicePixelRatio * 2 / 3);
 ratio = WWidth / WHeight;
 const main = document.getElementById("contact");
@@ -12,7 +12,6 @@ function up(){
     img.style.opacity = "80%";
 }
 window.addEventListener('resize', () => {
-    WHeight = (window.screen.availHeight - (window.outerHeight - window.innerHeight * (window.devicePixelRatio * 2 / 3))) / (window.devicePixelRatio * 2 / 3);
     WWidth = (window.screen.availWidth - (window.outerWidth - window.innerWidth * (window.devicePixelRatio * 2 / 3))) / (window.devicePixelRatio * 2 / 3);
     main.style.height = `${Math.max(WHeight, WWidth / 16 * 9)}px`;
 });

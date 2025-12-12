@@ -4,7 +4,9 @@
     scrollbar-width: none;
 }
 
-
+@media screen and (max-width: 450px){
+    html{font-size: 2.5lvw;}
+}
 
 #contact{
     position: relative;

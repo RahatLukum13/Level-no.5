@@ -4,6 +4,7 @@ var WWidth = (window.screen.availWidth - (window.outerWidth - window.innerWidth 
 ratio = WWidth / WHeight;
 const main = document.getElementById("ab_us_main");
 const sofa = document.getElementById("ab_us_sofa");
+const kit = document.getElementById("ab_us_kit");
 const H = document.getElementById("ab_us_h");
 const pre = document.getElementById("ab_us_pre");
 const ul = document.getElementsByClassName("ab_us_ul")[0];
@@ -15,14 +16,24 @@ function toggleMenuIcon() {
     foot.classList.toggle('active');
 }
 sofa.style.bottom = `0px`;
-main.style.height = `${Math.max(WHeight, ul.scrollHeight + WWidth / 4, sofa.scrollHeight)}px`;
+if (window.innerWidth <= 576){
+    main.style.height = `${kit.scrollHeight + 169 / 3}px`;
+}
+else{
+    main.style.height = `${Math.max(WHeight, ul.scrollHeight + WWidth / 3.3, sofa.scrollHeight)}px`;
+}
 menuIcon.addEventListener('click', toggleMenuIcon);
 window.addEventListener('resize', () => {
     WHeight = (window.screen.availHeight - (window.outerHeight - window.innerHeight * (window.devicePixelRatio * 2 / 3))) / (window.devicePixelRatio * 2 / 3);
     WWidth = (window.screen.availWidth - (window.outerWidth - window.innerWidth * (window.devicePixelRatio * 2 / 3))) / (window.devicePixelRatio * 2 / 3);
     sofa.style.bottom = `0px`;
     sofa.style.width = `${WWidth}px`;
-    main.style.height = `${Math.max(WHeight, ul.scrollHeight + WWidth / 4, sofa.scrollHeight)}px`;
+    if (window.innerWidth <= 576){
+        main.style.height = `${kit.scrollHeight + 169 / 3}px`;
+    }
+    else{
+        main.style.height = `${Math.max(WHeight, ul.scrollHeight + WWidth / 3.3, sofa.scrollHeight)}px`;
+    }
     if(window.innerWidth > 1400 & menuIcon.classList.contains('active')){
         menuIcon.classList.toggle('active');
         foot.style.height = 'auto';

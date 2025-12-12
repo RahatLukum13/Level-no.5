@@ -20,16 +20,16 @@
 
 
 @media screen and (max-width: 1100px) {
-    .menu-icon{height: calc(100px / 3); width: calc(100px / 3);}
-    #button{height: 40px; padding-top: 90px;}
+    .menu-icon{height: calc(200px / 9); width: calc(200px / 9);}
+    #button{height: calc(100px / 3); padding-top: calc(40px + 100px / 3);}
     #button button{font-size: 11px;}
-    #button li{width: 128px;}
+    #button li{width: calc(848px / 9);}
     .projects_name{padding-top: 90px;}
-    .mainContainer{padding-top: 180px;}
+    .mainContainer{padding-top: calc(40px + 250px / 3 - 1dvw);}
 }
 @media screen and (width > 1100px) {
     .menu-icon{height: 50px; width: 50px;}
-    #button{height: 60px; padding-top: 110px;}
+    #button{height: 50px; padding-top: 110px;}
     #button button{font-size: 17px;}
     #button li{width: 192px;}
     .projects_name{padding-top: 110px;}
@@ -49,6 +49,9 @@
     position: relative;
     margin-right: 2px;
 }
+#button li:nth-child(3){
+    margin-right: 0px;
+}
 #button button{
     font-family: inherit;
     appearance: none;
@@ -56,13 +59,13 @@
     width: 100%;
     height: 100%;
     border: none;
-    /* background-image: url('C:/Users/karma/OneDrive/Desktop/Для Димы/Png/0002.png'); */
+    /* background-image: url('C:/Users/karma/Desktop/Level-no.5/Png/0002.png'); */
     background-image: url('https://rahatlukum13.github.io/Level-no.5/Png/0002.png');
     background-size: cover;
     color: white;
 }
 #button button:hover{
-    /* background-image: url('C:/Users/karma/OneDrive/Desktop/Для Димы/Png/0001.png'); */
+    /* background-image: url('C:/Users/karma/Desktop/Level-no.5/Png/0001.png'); */
     background-image: url('https://rahatlukum13.github.io/Level-no.5/Png/0001.png');
 }
 #button button p{
@@ -72,7 +75,7 @@
 }
 #button button:disabled{
     cursor: default;
-    /* background-image: url('C:/Users/karma/OneDrive/Desktop/Для Димы/Png/0001.png'); */
+    /* background-image: url('C:/Users/karma/Desktop/Level-no.5/Png/0001.png'); */
     background-image: url('https://rahatlukum13.github.io/Level-no.5/Png/0001.png');
 }
 

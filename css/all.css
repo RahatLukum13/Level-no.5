@@ -1,28 +1,28 @@
 @font-face {
     font-family: 'TTNorms-Regular';
     src: local('TTNorms-Regular'),
-    /* url("C:/Users/karma/OneDrive/Desktop/Для Димы/Шрифты/tt-norms-the-one-universal-grotesk/TTNorms-Regular.otf") format('opentype'), */
+    /* url("C:/Users/karma/Desktop/Level-no.5/Шрифты/tt-norms-the-one-universal-grotesk/TTNorms-Regular.otf") format('opentype'), */
     url("https://rahatlukum13.github.io/Level-no.5/Шрифты/tt-norms-the-one-universal-grotesk/TTNorms-Regular.otf") format('opentype');
 }
 
 @font-face {
     font-family: 'TTNorms-Bold';
     src: local('TTNorms-Bold'),
-    /* url("C:/Users/karma/OneDrive/Desktop/Для Димы/Шрифты/tt-norms-the-one-universal-grotesk/TTNorms-Bold.otf") format('opentype'), */
+    /* url("C:/Users/karma/Desktop/Level-no.5/Шрифты/tt-norms-the-one-universal-grotesk/TTNorms-Bold.otf") format('opentype'), */
     url("https://rahatlukum13.github.io/Level-no.5/Шрифты/tt-norms-the-one-universal-grotesk/TTNorms-Bold.otf") format('opentype');
 }
 
 @font-face {
     font-family: 'TTNorms-Thin';
     src: local('TTNorms-Thin'),
-    /* url("C:/Users/karma/OneDrive/Desktop/Для Димы/Шрифты/tt-norms-the-one-universal-grotesk/TTNorms-Thin.otf") format('opentype'), */
+    /* url("C:/Users/karma/Desktop/Level-no.5/Шрифты/tt-norms-the-one-universal-grotesk/TTNorms-Thin.otf") format('opentype'), */
     url("https://rahatlukum13.github.io/Level-no.5/Шрифты/tt-norms-the-one-universal-grotesk/TTNorms-Thin.otf") format('opentype');
 }
 
 @font-face {
     font-family: 'TTNorms-ThinItalic';
     src: local('TTNorms-ThinItalic'),
-    /* url("C:/Users/karma/OneDrive/Desktop/Для Димы/Шрифты/tt-norms-the-one-universal-grotesk/TTNorms-ThinItalic.otf") format('opentype'), */
+    /* url("C:/Users/karma/Desktop/Level-no.5/Шрифты/tt-norms-the-one-universal-grotesk/TTNorms-ThinItalic.otf") format('opentype'), */
     url("https://rahatlukum13.github.io/Level-no.5/Шрифты/tt-norms-the-one-universal-grotesk/TTNorms-ThinItalic.otf") format('opentype');
 }
 
@@ -30,8 +30,8 @@
 @font-face {
     font-family: 'Wremena Regular';
     src: local('Wremena Regular'),
-    /* url("C:/Users/karma/OneDrive/Desktop/Для Димы/Шрифты/wremena/Wremena Regular.otf") format('opentype'), */
-    /* url("C:/Users/karma/OneDrive/Desktop/Для Димы/Шрифты/wremena/Wremena Regular.woff") format('woff'), */
+    /* url("C:/Users/karma/Desktop/Level-no.5/Шрифты/wremena/Wremena Regular.otf") format('opentype'), */
+    /* url("C:/Users/karma/Desktop/Level-no.5/Шрифты/wremena/Wremena Regular.woff") format('woff'), */
     url("https://rahatlukum13.github.io/Level-no.5/Шрифты/wremena/Wremena Regular.otf") format('opentype'),
     url("https://rahatlukum13.github.io/Level-no.5/Шрифты/wremena/Wremena Regular.woff") format('woff');
 }
@@ -103,7 +103,7 @@
 
 
 @media screen and (max-width: 1100px) {
-    html header{height: 40px; font-size: calc(17px * 2 / 3);}
+    html header{width: calc(100% - 100px / 3);; height: 40px; font-size: calc(17px * 2 / 3); margin: calc(25px * 2 / 3)}
     .header_contact > li:not(.contact_li){width: 128.42px;}
     .contact_li{width: 128.42px; height: 40px;}
     .to-up{width: 20px; height: 20px;}
@@ -227,17 +227,17 @@ nav {
     margin-right: 2px;
 }
 .leftMainMenu li{
-    /* background-image: url('C:/Users/karma/OneDrive/Desktop/Для Димы/Png/0002.png'); */
+    /* background-image: url('C:/Users/karma/Desktop/Level-no.5/Png/0002.png'); */
     background-image: url('https://rahatlukum13.github.io/Level-no.5/Png/0002.png');
     background-size: cover;
 }
 .leftMainMenu li:hover{
-    /* background-image: url('C:/Users/karma/OneDrive/Desktop/Для Димы/Png/0001.png'); */
+    /* background-image: url('C:/Users/karma/Desktop/Level-no.5/Png/0001.png'); */
     background-image: url('https://rahatlukum13.github.io/Level-no.5/Png/0001.png');
     background-size: cover;
 }
 .leftMainMenu li.active{
-    /* background-image: url('C:/Users/karma/OneDrive/Desktop/Для Димы/Png/0001.png'); */
+    /* background-image: url('C:/Users/karma/Desktop/Level-no.5/Png/0001.png'); */
     background-image: url('https://rahatlukum13.github.io/Level-no.5/Png/0001.png');
     background-size: cover;
 }
@@ -348,15 +348,52 @@ nav {
     z-index: 3;
     transition: transform 1s ease-in-out;
 }
-.header_contact:hover > li:nth-child(2){
-    transform: translateY(calc(2px + 1em * 60 / 17));
+@media screen and (pointer: fine){
+    .header_contact:hover > li:nth-child(2){
+        transform: translateY(calc(2px + 1em * 60 / 17));
+    }
+    .header_contact:hover > li:nth-child(3){
+        transform: translateY(calc(4px + 1em * 100 / 17));
+    }
+    .header_contact:hover > li:nth-child(4){
+        transform: translateY(calc(6px + 1em * 140 / 17));
+    }
+    .header_contact:hover > li:nth-child(5){
+        transform: translateY(calc(2px + 1em * 60 / 17));
+    }
+    .header_contact:hover > li:nth-child(6){
+        transform: translateY(calc(4px + 1em * 100 / 17));
+    }
+    .header_contact:hover > li:nth-child(7){
+        transform: translateY(calc(6px + 1em * 140 / 17));
+    }
+
+    .header_contact > li:hover{
+        /* background-image: url('C:/Users/karma/Desktop/Level-no.5/Png/0001.png'); */
+        background-image: url('https://rahatlukum13.github.io/Level-no.5/Png/0001.png');
+    }
+    .header_contact button:hover{
+        /* background-image: url('C:/Users/karma/Desktop/Level-no.5/Png/0001.png'); */
+        background-image: url('https://rahatlukum13.github.io/Level-no.5/Png/0001.png');
+    }
+
+    .header_contact:hover span:nth-child(1){
+        transform: translateX(12px);
+    }
+    .header_contact:hover span:nth-child(3){
+        transform: translateX(7px);
+    }
 }
-.header_contact:hover > li:nth-child(3){
-    transform: translateY(calc(4px + 1em * 100 / 17));
+
+@media screen and ((pointer: none) or (pointer: coarse)) {
+     .header_contact.active span:nth-child(1){
+        transform: translateX(12px);
+    }
+    .header_contact.active span:nth-child(3){
+        transform: translateX(7px);
+    }
 }
-.header_contact:hover > li:nth-child(4){
-    transform: translateY(calc(6px + 1em * 140 / 17));
-}
+
 .header_contact.active > li:nth-child(2){
     transform: translateY(calc(2px + 1em * 60 / 17));
 }
@@ -364,15 +401,6 @@ nav {
     transform: translateY(calc(4px + 1em * 100 / 17));
 }
 .header_contact.active > li:nth-child(4){
-    transform: translateY(calc(6px + 1em * 140 / 17));
-}
-.header_contact:hover > li:nth-child(5){
-    transform: translateY(calc(2px + 1em * 60 / 17));
-}
-.header_contact:hover > li:nth-child(6){
-    transform: translateY(calc(4px + 1em * 100 / 17));
-}
-.header_contact:hover > li:nth-child(7){
     transform: translateY(calc(6px + 1em * 140 / 17));
 }
 .header_contact.active > li:nth-child(5){
@@ -386,7 +414,7 @@ nav {
 }
 .header_contact > li{
     position: relative;
-    /* background-image: url('C:/Users/karma/OneDrive/Desktop/Для Димы/Png/0002.png'); */
+    /* background-image: url('C:/Users/karma/Desktop/Level-no.5/Png/0002.png'); */
     background-image: url('https://rahatlukum13.github.io/Level-no.5/Png/0002.png');
     background-size: cover;
     margin-bottom: 2px;
@@ -400,21 +428,13 @@ nav {
     width: 100%;
     height: 100%;
     border: none;
-    /* background-image: url('C:/Users/karma/OneDrive/Desktop/Для Димы/Png/0002.png'); */
+    /* background-image: url('C:/Users/karma/Desktop/Level-no.5/Png/0002.png'); */
     background-image: url('https://rahatlukum13.github.io/Level-no.5/Png/0002.png');
     background-size: cover;
     color: white;
 }
-.header_contact > li:hover{
-    /* background-image: url('C:/Users/karma/OneDrive/Desktop/Для Димы/Png/0001.png'); */
-    background-image: url('https://rahatlukum13.github.io/Level-no.5/Png/0001.png');
-}
-.header_contact button:hover{
-    /* background-image: url('C:/Users/karma/OneDrive/Desktop/Для Димы/Png/0001.png'); */
-    background-image: url('https://rahatlukum13.github.io/Level-no.5/Png/0001.png');
-}
 .header_contact.active button{
-    /* background-image: url('C:/Users/karma/OneDrive/Desktop/Для Димы/Png/0001.png'); */
+    /* background-image: url('C:/Users/karma/Desktop/Level-no.5/Png/0001.png'); */
     background-image: url('https://rahatlukum13.github.io/Level-no.5/Png/0001.png');
 }
 
@@ -444,16 +464,6 @@ nav {
 .contact_li span:nth-child(3){
     width: 23px;
 }
-
-
-
-.header_contact:hover span:nth-child(1){
-    transform: translateX(12px);
-}
-.header_contact:hover span:nth-child(3){
-    transform: translateX(7px);
-}
-
 
 
 
@@ -551,7 +561,7 @@ footer p{
     margin-top: calc(5px / sqrt(2) + 12.5px /2);
     opacity: 0;
     transition: opacity 0.4s ease-out;
-    /* background-image: url("C:/Users/karma/OneDrive/Desktop/Для Димы/Png/0002.png"); */
+    /* background-image: url("C:/Users/karma/Desktop/Level-no.5/Png/0002.png"); */
     background-image: url("https://rahatlukum13.github.io/Level-no.5/Png/0002.png");
     background-size: cover;
 }
