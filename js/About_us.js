@@ -15,7 +15,6 @@ function toggleMenuIcon() {
     foot.classList.toggle('active');
 }
 sofa.style.bottom = `0px`;
-sofa.style.width = `${WWidth}px`;
 main.style.height = `${Math.max(WHeight, ul.scrollHeight + WWidth / 4, sofa.scrollHeight)}px`;
 menuIcon.addEventListener('click', toggleMenuIcon);
 window.addEventListener('resize', () => {

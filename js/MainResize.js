@@ -31,7 +31,7 @@ if (window.innerWidth > 450){
     secondUl.style.marginTop = `${WHeight * 0.06 + pageYOffset * 0.09}px`;
 }
 else{
-    slide2.style.height = `100dvw`;
+    slide2.style.height = `100lvd`;
     secondUl.style.marginTop = `${window.innerWidth * 0.1 + pageYOffset * 0.06}px`;
 
 }

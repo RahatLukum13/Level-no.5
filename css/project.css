@@ -2,19 +2,19 @@
     .projects{width: 90dvw; padding: 5dvw;}
     .projects_horiz{width: 88dvw;}
     .projects_vertical{width: 42.8dvw;}
-    .projects img{height: calc(88dvw / 16 * 9);}
+    .projects img{height: calc(88lvw / 16 * 9);}
     .projects_name{padding: 6dvw;}
     .mainContainer{grid-template-columns: 1fr; padding: 5dvw;}
-    .contain img{width: 87.8dvw; height: calc(88dvw / 16 * 9);}
+    .contain img{width: 87.8dvw; height: calc(88lvw / 16 * 9);}
 }
 @media screen and (width > 768px) {
     .projects{width: 80dvw; padding: 10dvw;}
     .projects_horiz{width: 78dvw;}
     .projects_vertical{width: 37.8dvw;}
-    .projects img{height: calc(78dvw / 16 * 9);}
+    .projects img{height: calc(78lvw / 16 * 9);}
     .projects_name{padding: 11dvw;}
     .mainContainer{grid-template-columns: repeat(2, 1fr); padding: 12dvw;}
-    .contain img{width: 36dvw; height: calc(36dvw / 16 * 9);}
+    .contain img{width: 36dvw; height: calc(36lvw / 16 * 9);}
 }
 
 

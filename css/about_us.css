@@ -38,7 +38,7 @@
     html footer{font-size: 14px;}
 }
 @media screen and (width > 1400px) {
-    html{font-size: calc(30 / 3840 * 100dvw);}
+    html{font-size: calc(30 / 3840 * 100lvw);}
 }
 
 
@@ -157,6 +157,9 @@ justify-self: center;
 }
 #ab_us_main .pre div{
     height: 2.4ex;
+}
+#ab_us_sofa{
+    width: 100dvw;
 }
 
 

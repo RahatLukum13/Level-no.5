@@ -1,8 +1,8 @@
 @media screen and (450px < width <= 768px) {
-    html .slide_ul{font-size: 3dvw;}
+    html .slide_ul{font-size: 3lvw;}
 }
 @media screen and (width > 768px) {
-    html .slide_ul{font-size: 2.15dvw;}
+    html .slide_ul{font-size: 2.15lvw;}
 }
 
 @media screen and (width <= 450px) {
@@ -92,7 +92,7 @@ video{
 .back_mob{
     position: absolute;
     bottom: 0;
-    height: 100dvw;
+    height: 100lvw;
     width: 100dvw;
 }
 #back_sofa2{
