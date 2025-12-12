@@ -79,8 +79,8 @@ video{
     left: 0;
     bottom: 0;
     z-index: -1;
-    min-height: 100%;
-    min-width: 100%;
+    min-height: 100lvh;
+    min-width: 100lvw;
 }
 #back_sofa{
     position: absolute;

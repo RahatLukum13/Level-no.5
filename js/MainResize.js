@@ -25,13 +25,13 @@ function low(){
 function up(){
     back_ligth.style.opacity = "50%";
 }
-slide1.style.height = `${WHeight}px`;
+slide1.style.height = `100lvh`;
 if (window.innerWidth > 450){
     slide2.style.height = `${Math.max(WHeight, WWidth / 3840 * 1914)}px`;
     secondUl.style.marginTop = `${WHeight * 0.06 + pageYOffset * 0.09}px`;
 }
 else{
-    slide2.style.height = `100lvd`;
+    slide2.style.height = `100lvw`;
     secondUl.style.marginTop = `${window.innerWidth * 0.1 + pageYOffset * 0.06}px`;
 
 }
