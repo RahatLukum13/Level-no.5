@@ -56,25 +56,26 @@ window.addEventListener('resize', () => {
     if (navigator.maxTouchPoints > 0){
         var WHeight = window.screen.availHeight / (window.devicePixelRatio * 2 / 3);
         var WWidth = window.screen.availWidth / (window.devicePixelRatio * 2 / 3);
+        slide1.style.height = `100lvh`;
+        slide2.style.height = `110dvw`;
+        slide3.style.width = `110lvw * 3840 / 1914`;
+        slide3.style.height = `110lvw`;
+        slide4.style.width = `110lvw * 3840 / 1914`;
+        slide4.style.height = `110lvw`;
     }
     else{
         var WHeight = (window.screen.availHeight - (window.outerHeight - window.innerHeight * (window.devicePixelRatio * 2 / 3))) / (window.devicePixelRatio * 2 / 3);
         var WWidth = (window.screen.availWidth - (window.outerWidth - window.innerWidth * (window.devicePixelRatio * 2 / 3))) / (window.devicePixelRatio * 2 / 3);
-    }
-    slide1.style.height = `${WHeight}px`;
-    if (window.innerWidth > 450){
+        slide1.style.height = `${WHeight}px`;
         slide2.style.height = `${Math.max(WHeight, WWidth / 3840 * 1914)}px`;
         slide3.style.width = `${Math.max(WHeight * 3840 / 1914, WWidth)}px`
         slide3.style.height = `${Math.max(WHeight * 3840 / 1914, WWidth) / (2400 + 5000 / 3121 * 3000) * 3000}px`;
         slide4.style.width = `${Math.max(WHeight * 3840 / 1914, WWidth)}px`
         slide4.style.height = `${Math.max(WHeight * 3840 / 1914, WWidth) / 3840 * 1670}px`;
     }
+    if (window.innerWidth > 450){
+    }
     else{
-        slide2.style.height = `110dvw`;
-        slide3.style.width = `110lvw * 3840 / 1914`;
-        slide3.style.height = `110lvw`;
-        slide4.style.width = `110lvw * 3840 / 1914`;
-        slide4.style.height = `110lvw`;
     }
     back_sofa.style.width = `${WWidth}px`;
     back_sofa.style.bottom = `0px`
